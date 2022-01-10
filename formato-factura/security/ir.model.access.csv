@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_formato-factura_formato-factura,formato-factura.formato-factura,model_formato-factura_formato-factura,base.group_user,1,1,1,1
