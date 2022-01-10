@@ -6,7 +6,7 @@
 
             <t t-call="web.external_layout">
 
-                <h1> PRUEBA HEREDAR</h1>
+                <h1> PRUEBA HEREDAR 2</h1>
             </t> 
         </xpath>
     </template>
