@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <template id="report_withholding_customer_document">
+    <template id="report_invoice_document">
         <h1> TEST </h1>
     </template>
 </odoo>
