@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <template id="report_invoice_document">
-        <h1> TEST </h1>
+    <template id="report_invoice_document_inherit" inherit_id="account.report_invoice_document">
+
+        <xpath expr="//t[@t-call='web.external_layout']" position="replace">
+
+            <t t-call="web.external_layout">
+
+                <h1> PRUEBA HEREDAR</h1>
+            </t> 
+        </xpath>
     </template>
 </odoo>
