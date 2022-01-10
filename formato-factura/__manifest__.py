@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'formato factura',
+    'name': 'formato-factura',
     
     'summary': """
         This is a module 
