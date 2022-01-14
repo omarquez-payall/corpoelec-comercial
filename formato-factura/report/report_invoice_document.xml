@@ -222,7 +222,7 @@
           Fuerzas Armadas CC Camino Real nivel feria de planta 1 local B-L63. <br></br>
           módulo B sector centro Barcelona Anzoategui zona postal
       </div>
-      <table style="position: absolute; top: 32px; left: 11px; border-collapse: collapse; font-size: 6px !important;">
+      <table style="position: absolute; top: 32px; left: 20px; border-collapse: collapse; font-size: 6px !important;">
           <tr>
               <td>Servicio de Aseo Urbano</td> <td>Bs.</td>
           </tr>
@@ -234,7 +234,7 @@
           </tr>
       </table>
 
-      <div style="position: absolute; bottom: 2px; left: 10px; ">
+      <div style="position: absolute; bottom: 2px; left: 20px; ">
           <table style="font-size: 6.5px;border-collapse: collapse;">
               <tr>
                   <td style="padding-right: 4px;width: 57px;">TOTAL ASEO</td>
@@ -251,7 +251,7 @@
         <div style=" width: 100px; margin-top: 38px; margin-left: -45px; font-size: 5.5px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">IMPUESTO INMUEBLE</div>
       </div>
 
-      <table style="position: absolute; top: 32px;  left: 11px; border-collapse: collapse; font-size: 6px !important;">
+      <table style="position: absolute; top: 32px;  left: 20px; border-collapse: collapse; font-size: 6px !important;">
           <tr>
               <td>Número de Identificacion del <br></br> Inmueble:</td> <td style="vertical-align:top">Bs.</td>
           </tr>
@@ -261,7 +261,7 @@
 
       </table>
 
-      <div style="position: absolute; bottom: 2px; left: 10px; ">
+      <div style="position: absolute; bottom: 2px; left: 20px; ">
           <table style="font-size: 6.5px;border-collapse: collapse;">
               <tr>
                   <td style="padding-right: 4px;width: 57px;">TOTAL IMPUESTO</td>
@@ -278,7 +278,7 @@
         <div style=" width: 100px; margin-top: 35px; margin-left: -45px; font-size: 5.5px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">RELLENO SANITARIO</div>
       </div>
 
-      <table style="position: absolute; top: 32px;  left: 11px; border-collapse: collapse; font-size: 6px !important;">
+      <table style="position: absolute; top: 32px;  left: 20px; border-collapse: collapse; font-size: 6px !important;">
           <tr>
               <td>Servicio de Relleno Sanitario:</td> <td style="vertical-align:top">Bs.</td>
           </tr>
@@ -291,7 +291,7 @@
 
       </table>
 
-      <div style="position: absolute; bottom: 2px; left: 10px; ">
+      <div style="position: absolute; bottom: 2px; left: 20px; ">
           <table style="font-size: 6.5px;border-collapse: collapse;">
               <tr>
                   <td style="padding-right: 4px;width: 57px;">TOTAL RELLENO</td>
@@ -306,7 +306,7 @@
           <div style="width: 30px; margin-top: 45px ;margin-left: -10px ;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">GAS</div>
       </div>
 
-      <table style="position: absolute; top: 32px; left: 11px; border-collapse: collapse; font-size: 6px !important;">
+      <table style="position: absolute; top: 32px; left: 20px; border-collapse: collapse; font-size: 6px !important;">
           <tr>
               <td>Servicio de GAS</td> <td style="vertical-align:top">Bs.</td>
           </tr>
@@ -319,7 +319,7 @@
 
       </table>
 
-      <div style="position: absolute; bottom: 2px; left: 10px; ">
+      <div style="position: absolute; bottom: 2px; left: 20px; ">
           <table style="font-size: 6.5px;border-collapse: collapse;">
               <tr>
                   <td style="padding-right: 4px;width: 57px;">TOTAL GAS</td>
