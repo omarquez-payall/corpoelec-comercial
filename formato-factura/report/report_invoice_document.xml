@@ -111,7 +111,7 @@
         <div style="position: absolute; width: 35%; right:0; top: 0;">
             <table style="font-size: 6.5px;border-collapse: collapse; width: 100%;">
                 <tr>
-                    <br style="border: 1px solid black; text-align: center; width: 15%;">Tipo de <br></br> Tarifa</td>
+                    <td style="border: 1px solid black; text-align: center; width: 15%;">Tipo de  <br></br>Tarifa</td>
                     <td style="border: 1px solid black; text-align: center;width: 55%;">CNAE</td>
                     <td style="border: 1px solid black;text-align: center; width:30%">No. de Medidor</td>
                 </tr>
