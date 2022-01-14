@@ -4,7 +4,7 @@
 
         <xpath expr="//t[@t-call='web.external_layout']" position="replace">
 
-            <t>
+            <t t-call="web.external_layout">
                 <table style="width: 100%; height: 40px; /* border: 1px solid red; */border-collapse: collapse;">
                     <tr>
                         <td style="width: 40%; height: 100%; /* border: 1px solid red; */">
