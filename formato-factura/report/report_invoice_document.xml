@@ -27,17 +27,16 @@
                 </table>
 
 
-                <table style="width: 100%;  /* border: 1px solid red; */border-collapse: collapse;">
+                <table style="width: 100%; border-collapse: collapse;">
                     <tr>
-                        <td style="width: 50%; vertical-align:top; font-size: 8px ">
+                        <td style="width: 50%; vertical-align:top; font-size: 8px;">
                             <span style="font-size: 8px ;">Titular del Contrato:</span> <br></br>
                             <span style="font-size: 8px ;"> INDISUDNBDJSHJN SJSSJSJ</span> <br></br>
                             <span style="margin-right: 15px;">CI/RIF/.Nro</span>  G-200115dddsa <br></br>
                             <span>Direccion del suministro </span> <br></br>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officiis illum optio quis consequatur debitis in aliquam veritatis, facilis consequuntur ratione dignissimos ad aut, recusandae autem dolorem nesciunt adipisci excepturi!
-                    
-                       
                             <p style="width: 100%; margin-top: 3px;">Secuencia: 00000000001</p>
+                        </td>
                         <td style="width: 50%; font-size: 8px !important">
                             <p style="width: 100%; text-align: center; font-size: 11px; margin-top: -15px;">No. Factura XX16886826386386</p>
                             Titular del Pago. Direccion de Notificacion/Fiscal <br></br>
@@ -47,29 +46,7 @@
                 </table>
 
 
-                <div style="position: relative;height: 27px; width: 100%; margin-top: 10px; border: 1px solid black; background-color: #E7E3E3;">
-                    <div style="position: absolute;">
-                        <div style="width: auto; height: 27px; left: 0; top: 0;" >LOG CORP</div>
-                    </div>
-
-                    <div style="position: absolute; left: 35px; width: 200px; font-size: 5px; align-content: center; text-align: center; padding-top: 7px;">
-                        Corporación Eléctrica Nacional , S.A (CORPOELEC) Rif G-20010014-1 Av. <br></br>
-            Volimer entre Caracas y Alameda Edif. Centro Empresarial Caracas Piso 6 Of. 8, <br></br>
-            San Bernandino Caracas. Venezuela Telf. (0212) 502.21.11
-                    </div>
-                    <div style="position: absolute; width: 100%; top: 2px; font-size: 8px; text-align: center; text-align: center;">
-                            SERVICIO DE ELECTRICIDAD
-                    </div>
-                    <div style="position: absolute; bottom: 2px; right: 100px; font-size: 5px;">
-                       4010 Generación ,Captación y Distribución  de Energía Eléctrica
-                    </div>
-                    <div style="position: absolute; bottom: 0x; right: 0;">
-                      
-                        <div style="height: 27px; width: auto;">
-
-                        </div>
-                    </div>
-                </div>
+                
             </t> 
         </xpath>
     </template>
