@@ -159,7 +159,7 @@
         <tfoot style="background-color: #ccc;">
             <tr>
               <td>TOTAL CARGOS POR SERVICIO DE ELECTRICIDAD <span style="margin-left: 25%;">Bs.</span></td>
-              <td>88.434,97</td>
+              <td>88.434,97</td> 
             </tr>
           </tfoot>
     </table>
