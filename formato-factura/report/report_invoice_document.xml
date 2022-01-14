@@ -211,7 +211,7 @@
         <!--  ###################### ASEO ###################### -->
   <div id="aseo" style="position:absolute; width: 27%;top:1px; border: 1px solid black;height: 90px; ">
       <div style="position: absolute; top: 0; left: 0; height: 89px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
-        <div style="width: 30px; margin-top: 15px ;margin-left: 0;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">ASEO</div>
+        <div style="width: 30px; margin-top: 15px ;margin-left: -10px ;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">ASEO</div>
       </div>
       <div style="position: absolute; top:12px; font-size: 6px; text-align: center; align-content: center; width: 100%;">
           9000 Eliminacion de Desperdicios y Aguas Residuales <br></br>
