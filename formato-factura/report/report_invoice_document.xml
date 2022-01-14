@@ -232,8 +232,6 @@
           <tr>
               <td>Total Base Imponible <br></br> Total IVA</td> <td>Bs.</td>
           </tr>
-        
-
       </table>
 
       <div style="position: absolute; bottom: 2px; left: 10px; ">
@@ -249,7 +247,7 @@
 
    <!--  ###################### IMPUESTO INMUBLE ###################### -->
    <div id="impuestoInmueble" style="position:absolute; width: 27%;top: 94px; border: 1px solid black;height: 90px; ">
-      <div style="position: absolute; top: 0; left: 0; height: 90px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
+      <div style="position: absolute; top: 0; left: 0; height: 89px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
         <div style=" width: 100px; margin-top: 32px; margin-left: -45px; font-size: 5.5px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">IMPUESTO INMUEBLE</div>
       </div>
 
@@ -276,7 +274,7 @@
 
   <!--  ###################### RELLENO###################### -->
   <div style="position:relative; width: 27%;top:0; left: 35%; border: 1px solid black;height: 90px; ">
-      <div style="position: absolute; top: 0; left: 0; height: 90px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
+      <div style="position: absolute; top: 0; left: 0; height: 89px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
         <div style=" width: 100px; margin-top: 45px; margin-left: -45px; font-size: 5.5px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">RELLENO SANITARIO</div>
       </div>
 
@@ -304,7 +302,7 @@
          </div>
   </div>
   <div style="position:absolute; width: 27%;top: 94px;left: 35%; border: 1px solid black;height: 90px; ">
-      <div style="position: absolute; top: 0; left: 0; height: 90px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
+      <div style="position: absolute; top: 0; left: 0; height: 89px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
           <div style="width: 30px; margin-top: 45px ;margin-left: -10px ;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">GAS</div>
       </div>
 
