@@ -237,7 +237,7 @@
       <div style="position: absolute; bottom: 2px; left: 20px; ">
           <table style="font-size: 6.5px;border-collapse: collapse;">
               <tr>
-                  <td style="padding-right: 4px;width: 87px;">TOTAL ASEO</td>
+                  <td style="padding-right: 4px;width: 77px;">TOTAL ASEO</td>
                   <td style="background-color: #ccc; width: 30px;">Bs.</td>
                   <td style="background-color: #ccc;">88.32323,83</td>
               </tr>
@@ -264,7 +264,7 @@
       <div style="position: absolute; bottom: 2px; left: 20px; ">
           <table style="font-size: 6.5px;border-collapse: collapse;">
               <tr>
-                  <td style="padding-right: 4px;width: 87px;">TOTAL IMPUESTO</td>
+                  <td style="padding-right: 4px;width: 77px;">TOTAL IMPUESTO</td>
                   <td style="background-color: #ccc; width: 30px;">Bs.</td>
                   <td style="background-color: #ccc;">88.32323,83</td>
               </tr>
