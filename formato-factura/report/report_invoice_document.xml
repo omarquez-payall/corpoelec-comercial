@@ -163,8 +163,44 @@
             </tr>
           </tfoot>
     </table>
-                
+    <div style="position: relative; width: 100%; height: 25px ;">
+        <div style="position: absolute; right:0; top: 5px; border: 1px solid black;  padding: 5px; text-align: center; align-content: center; font-size: 5.5px; width: 20%; font-weight: bold;">
+            PERIODO DE FACTURACION DE ENERGIA <br></br>
+            03.06.2021 al 02.07.2021
+        </div>
+        <div style="position: absolute; top:3px; left: 0; font-size: 4px; line-height: 6px;">
+            (*) LOS PRECIOS Y CONCEPTOS INDICADOS EN ESTA FACTURASE RIGEN DE ACUERDO CON LA GACETA OFICIAL. No. 37415 DE FECHA : 05.04.2002 <br></br>
+(**) CONSUMO EQUIVALENTE KWH- CONSUMO ( KWH ) X 30 / DIAS DE FACTURACIÓN <br></br>
+(***) C.A.C.F. ART. N-20 SEGUN GACETA ANTES REFERIDA <br></br>
+(****) GACETA OFICIAL 38.263 DE FECHA 01/09/05
 
+        </div>
+
+    </div>
+
+
+
+
+    <div style="position: relative;width: 100%; top: 2px; font-size: 5px;  height: 30px;">
+        <div style="position: absolute; bottom: 0;">
+            Cuenta Contrato Colectiva: <br></br>
+            Documento Impresion Colectivo <br></br>
+            Determinacion de cuenta Colectiva  
+        </div>
+        <div style="position: absolute; bottom: 0; left: 200px;">
+            Banco: <br></br>
+            Cuenta: <br></br>
+        </div>
+         <div style="position: absolute; bottom: 0; right: 10px; ">
+          <table style="font-size: 10px;border-collapse: collapse;">
+              <tr>
+                  <td style="padding-right: 4px;">SUB-TOTAL</td>
+                  <td style="background-color: #ccc; width: 70px;">Bs</td>
+                  <td style="background-color: #ccc;">88.32323,83</td>
+              </tr>
+          </table>
+         </div>
+    </div>
             </t> 
         </xpath>
     </template>
