@@ -348,7 +348,7 @@
                 Volimer entre Caracas y Alameda Edif. Centro Empresarial Caracas Piso 6 Of. 8, <br></br>
                 San Bernandino Caracas. Venezuela Telf. (0212) 502.21.11
             </div>
-            <table style="position: absolute; top: 32px; left: 11px; border-collapse: collapse; font-size: 6px !important;">
+            <table style="position: absolute; top: 32px; left: 20px; border-collapse: collapse; font-size: 6px !important;">
                 <tr>
                     <td>Servicio de Electricidad</td> <td>Bs.</td>
                 </tr>
@@ -366,7 +366,7 @@
                 </tr>
             </table>
     
-            <div style="position: absolute; bottom: 2px; left: 10px; ">
+            <div style="position: absolute; bottom: 2px; left: 20px;">
                 <table style="font-size: 6.5px;border-collapse: collapse;">
                     <tr>
                         <td style="padding-right: 4px;width: 77px; font-size: 6.5px; ">TOTAL ELECTRICIDAD</td>
@@ -387,7 +387,7 @@
             Caracas, Piso 11 Ofic Serdeco, Urb. San Bernandino
         </div>
 
-        <table style="position: absolute; top: 32px;  left: 11px; border-collapse: collapse; font-size: 6px !important;">
+        <table style="position: absolute; top: 32px; left: 20px; border-collapse: collapse; font-size: 6px !important;">
             <tr>
                 <td>Eléctricidad, Saldo Vencido</td> <td style="vertical-align:top">Bs.</td>
             </tr>
@@ -400,7 +400,7 @@
         <div style="position: absolute; bottom: 2px; left: 20px;">
             <table style="font-size: 6.5px;border-collapse: collapse;">
                 <tr>
-                    <td style="padding-right: 4px;width: 75px;">TOTAL SALDO VENCIDO</td>
+                    <td style="padding-right: 4px;width: 80px;">TOTAL SALDO VENCIDO</td>
                     <td style="background-color: #ccc; width: 25px;">Bs.</td>
                     <td style="background-color: #ccc;text-align: right;">88.32323,83</td>
                 </tr>
