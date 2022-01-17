@@ -408,6 +408,41 @@
            </div>
     </div>
     </div>
+
+    <div style="font-size: 7px; position: relative; width: 100%; background-color: #ccc;  padding: 1px; align-content: center; text-align: center;border: 1px solid black;">
+        MONTO TOTAL A PAGAR
+    </div>
+
+    <div style="position: relative; width: 100%; height: 35px;">
+        <div style="position: absolute; top: 2px; left: 5px; font-size: 10px;">
+         Pague antes de: 26.09.2021
+        </div>
+
+        <div style="position:absolute; width: 100%; bottom: 0 !important; font-size: 5px; align-content: center; text-align: center;">
+            CONSERVE ESTA FACTURA SU CANCELACIÓN NO PRUEBA EL PAGO DE LAS ANTERIORES
+        </div>
+
+        <div style="position: absolute !important; bottom: 2px; right: 0; ">
+            <table style="font-size: 6.5px;border-collapse: collapse;">
+                <tr>
+                    <td style="padding-right: 4px;width: 75px;">ENERGIA</td>
+                    <td style="background-color: #ccc; width: 25px;">Bs.</td>
+                    <td style="background-color: #ccc;text-align: right;">88.32323,83</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 4px;width: 75px;">OTROS SERVICIOS</td>
+                    <td style="background-color: #ccc; width: 25px;">Bs.</td>
+                    <td style="background-color: #ccc; text-align: right;">00,0</td>
+                </tr>
+                <tr>
+                    <td style="padding-right: 4px;width: 75px;">TOTAL </td>
+                    <td style="background-color: #ccc; width: 25px;">Bs.</td>
+                    <td style="background-color: #ccc; text-align: right;">88.32323,83</td>
+                </tr>
+            </table>
+           </div>
+
+    </div>
             </t> 
         </xpath>
     </template>
