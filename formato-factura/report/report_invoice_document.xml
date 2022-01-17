@@ -369,7 +369,7 @@
             <div style="position: absolute; bottom: 2px; left: 10px; ">
                 <table style="font-size: 6.5px;border-collapse: collapse;">
                     <tr>
-                        <td style="padding-right: 4px;width: 70px; font-size: 6.5px; ">TOTAL ELECTRICIDAD</td>
+                        <td style="padding-right: 4px;width: 77px; font-size: 6.5px; ">TOTAL ELECTRICIDAD</td>
                         <td style="background-color: #ccc; width: 30px;">Bs.</td>
                         <td style="background-color: #ccc;text-align: right;">88.32323,83</td>
                     </tr>
@@ -397,7 +397,7 @@
 
         </table>
 
-        <div style="position: absolute; bottom: 2px; left: 10px; ">
+        <div style="position: absolute; bottom: 2px; left: 20px;">
             <table style="font-size: 6.5px;border-collapse: collapse;">
                 <tr>
                     <td style="padding-right: 4px;width: 75px;">TOTAL SALDO VENCIDO</td>
