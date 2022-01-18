@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
 
 from . import models
-from . import invoice_fields
+from . import invoice_images
