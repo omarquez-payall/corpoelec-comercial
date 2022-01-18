@@ -7,10 +7,10 @@
             <field name="arch" type="xml">
                 <form string="Invoices Images Form">
                     <sheet>
-                        <field name="logo" widget="image" class="oe_avatar"/>
-                        <field name="header_logo" widget="image" class="oe_avatar"/>
-                        <field name="full_logo" widget="image" class="oe_avatar"/>
-                        <field name="payment_methods" widget="image" class="oe_avatar"/>
+                        <group><field name="logo" widget="image" class="oe_avatar"/></group>
+                        <group><field name="header_logo" widget="image" class="oe_avatar"/></group>
+                        <group><field name="full_logo" widget="image" class="oe_avatar"/></group>
+                        <group><field name="payment_methods" widget="image" class="oe_avatar"/></group>
                     </sheet>
                 </form>
             </field>
