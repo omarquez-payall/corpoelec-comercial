@@ -26,7 +26,7 @@
     'data': [
         'security/invoices_images_security.xml',
         'security/ir.model.access.csv',
-        'views/invoices_images.xml',
+        'views/invoice_images.xml',
         'views/views.xml',
         'views/templates.xml',
         'report/report_invoice_document.xml'
