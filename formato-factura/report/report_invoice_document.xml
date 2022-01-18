@@ -82,7 +82,7 @@
     <div style="position: relative; width: 100%;">
         <div style="position: relative;width: 63%; border: 1px solid black;border-top: 0; height: 130px;">
             <table style="position: relative;width: 100.3%; font-size: 8px; border-collapse: collapse;">
-                <tbody>
+                <tbody style="padding-left: 3px;">
                     <tr>
                         <td colspan="2">FACTURACION POR CONSUMO</td>
                     </tr>
@@ -159,7 +159,7 @@
         <tfoot style="background-color: #ccc;">
             <tr>
               <td>TOTAL CARGOS POR SERVICIO DE ELECTRICIDAD <span style="margin-left: 25%;">Bs.</span></td>
-              <td>88.434,97</td> 
+              <td style="align-content: right; text-align: right; padding-right: 3px;">88.434,97</td> 
             </tr>
           </tfoot>
     </table>
@@ -427,17 +427,17 @@
                 <tr>
                     <td style="padding-right: 4px;width: 75px;">ENERGIA</td>
                     <td style="background-color: #ccc; width: 25px;">Bs.</td>
-                    <td style="background-color: #ccc;text-align: right;">88.32323,83</td>
+                    <td style="background-color: #ccc;text-align: right;">88.323.000.000.000,83</td>
                 </tr>
                 <tr>
                     <td style="padding-right: 4px;width: 75px;">OTROS SERVICIOS</td>
                     <td style="background-color: #ccc; width: 25px;">Bs.</td>
-                    <td style="background-color: #ccc; text-align: right;">00,0</td>
+                    <td style="background-color: #ccc; text-align: right;">88.323.000.000.000</td>
                 </tr>
                 <tr>
                     <td style="padding-right: 4px;width: 75px;">TOTAL </td>
                     <td style="background-color: #ccc; width: 25px;">Bs.</td>
-                    <td style="background-color: #ccc; text-align: right;">88.32323,83</td>
+                    <td style="background-color: #ccc; text-align: right;">88.323.000.000.000</td>
                 </tr>
             </table>
            </div>
