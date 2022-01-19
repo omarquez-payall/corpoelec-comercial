@@ -9,8 +9,8 @@ class InvoiceImagesInherit( models.Model):
     full_logo = fields.Binary(string='Full Logo')
     payment_methods = fields.Binary(string='Payment Methods')
     
-    @api.model
-    def create(self, vals):
-        vals['logo','header_logo','full_logo','payment_methods'] = self.env['invoices.images'].export_data()
-        result = super(InvoiceImagesInherit, self).create(vals)
-        return result 
+    #@api.model
+    #def create(self, vals):
+    #    vals['logo','header_logo','full_logo','payment_methods'] = self.env['invoices.images'].export_data()
+    #    result = super(InvoiceImagesInherit, self).create(vals)
+    #    return result 
