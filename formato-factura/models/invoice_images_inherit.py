@@ -12,5 +12,5 @@ class InvoiceImagesInherit( models.Model):
     @api.model
     def create(self, vals):
         vals['logo','header_logo','full_logo','payment_methods'] = self.env['invoices.images'].export_data()
-        result = super(InvoiceImages, self).create(vals)
+        result = super(InvoiceImagesInherit, self).create(vals)
         return result 
