@@ -2,7 +2,7 @@
 
 from odoo import models, fields, api
 
-class InvoiceImages( models.Model):
+class InvoiceImagesInherit( models.Model):
     _inherit = 'account.move'
     logo = fields.Binary(string='Logo')
     header_logo = fields.Binary(string='Header Logo')
