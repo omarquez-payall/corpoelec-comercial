@@ -4,13 +4,8 @@ from odoo import models, fields, api
 
 class InvoiceImagesInherit( models.Model):
     _inherit = 'account.move'
-    logo = fields.Binary(string='Logo')
-    header_logo = fields.Binary(string='Header Logo')
-    full_logo = fields.Binary(string='Full Logo')
-    payment_methods = fields.Binary(string='Payment Methods')
-    
-    #@api.model
-    #def create(self, vals):
-    #    vals['logo','header_logo','full_logo','payment_methods'] = self.env['invoices.images'].export_data()
-    #    result = super(InvoiceImagesInherit, self).create(vals)
-    #    return result 
+    images = fields.Many2one( string = 'Imágenes para facturas', comodel_name = 'invoices.images', required = True)
+    logo = fields.Binary(string='Logo', related='images.logo')
+    header_logo = fields.Binary(string='Header Logo', related='images.header_logo')
+    full_logo = fields.Binary(string='Full Logo', related='images.full_logo')
+    payment_methods = fields.Binary(string='Payment Methods', related='images.payment_methods')

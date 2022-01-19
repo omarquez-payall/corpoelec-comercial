@@ -27,7 +27,7 @@
         'security/invoices_images_security.xml',
         'security/ir.model.access.csv',
         'views/invoice_images.xml',
-        #'views/invoice_images_inherit.xml',
+        'views/invoice_images_inherit.xml',
         'views/views.xml',
         'views/templates.xml',
         'report/report_invoice_document.xml'
