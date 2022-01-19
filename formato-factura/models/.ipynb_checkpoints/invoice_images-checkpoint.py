@@ -12,4 +12,5 @@ class InvoiceImages( models.Model):
     
     @api.model
     def export_data(self):
-        return [self.logo,self.header_logo,self.full_logo,self.payment_methods]
+        for record in self:
+            return [record.logo,record.header_logo,record.full_logo,record.payment_methods]
