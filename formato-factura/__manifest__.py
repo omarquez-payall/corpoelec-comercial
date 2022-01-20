@@ -28,9 +28,7 @@
         'security/ir.model.access.csv',
         'data/invoices_images.xml',
         'views/invoice_images.xml',
-        #'views/invoice_images_inherit.xml',
-        'views/views.xml',
-        'views/templates.xml',
+        'views/invoice_images_inherit.xml',
         'report/report_invoice_document.xml'
     ],
     # only loaded in demonstration mode
