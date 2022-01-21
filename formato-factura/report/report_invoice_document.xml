@@ -338,7 +338,7 @@
 </div> 
   </div>
       <div style="font-size: 7px; position: relative; top: 5px; width: 100%; height: auto; background-color: #ccc;  padding: 1px; align-content: center; text-align: center;border: 1px solid black;">
-        INFORMACIÓN COMERCIAL
+        INFORMACIÓN COMERCIAL 
     </div>
     <!--     ###################### ELECTRICIDAD ###################### -->
     <div id="cuadroInformacionComercial" style="position: relative; width: 100%; top:5px; height: 103px; padding-top: 1px; ">
