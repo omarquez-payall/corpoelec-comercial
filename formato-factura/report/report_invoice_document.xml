@@ -8,7 +8,7 @@
                 <table style="width: 100%; height: 40px; /* border: 1px solid red; */border-collapse: collapse;">
                     <tr>
                         <td style="width: 40%; height: 100%; /* border: 1px solid red; */">
-                          <div style="width: 50%; height: 27px; font-size: 8px;"><img t-if="o.images.header_logo" t-att-src="image_data_uri(o.images.header_logo)" style="max-height: 45px;" alt="Logo"/></div>  <br></br>
+                          <div style="width: 50%; height: 27px;"><img t-if="o.images.header_logo" t-att-src="image_data_uri(o.images.header_logo)" style="width: 100%; height: 100%;" alt="Logo"/></div>  <br></br>
                           <span style="font-size: 6px ;">No. de Registro:</span> 
                           <span style="font-size: 6px ; margin-left: 17px;">2122220788</span> 
                           <span style="font-size: 6px ;margin-left: 40px;">No. Doc. Contable:</span> 
