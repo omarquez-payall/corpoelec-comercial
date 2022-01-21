@@ -63,7 +63,7 @@
                        4010 Generación ,Captación y Distribución  de Energía Eléctrica
                     </div>
                     <div style="position: absolute; bottom: 0x; right: 0;">
-                        <div style="height: 27px; width: auto;"> <img t-if="o.images.header_logo" t-att-src="image_data_uri(o.images.header_logo)" style="height:100%;" alt="Logo"/></div>
+                        <div style="height: 26px; width: auto;"> <img t-if="o.images.header_logo" t-att-src="image_data_uri(o.images.header_logo)" style="height:100%;" alt="Logo"/></div>
                     </div>
                 </div>
 
