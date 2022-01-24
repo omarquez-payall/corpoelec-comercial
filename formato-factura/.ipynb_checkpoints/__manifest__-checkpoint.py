@@ -29,6 +29,7 @@
         'data/invoices_images.xml',
         'views/invoice_images.xml',
         'views/invoice_images_inherit.xml',
+        'views/res_partner_inherit.xml',
         'report/report_invoice_document.xml'
     ],
     # only loaded in demonstration mode
