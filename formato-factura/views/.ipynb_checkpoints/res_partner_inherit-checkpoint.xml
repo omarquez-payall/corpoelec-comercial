@@ -13,7 +13,7 @@
         <record id="seq_partner_code" model="ir.sequence">
             <field name="name">Sequencia Interlocutores</field>
             <field name="code">partner_code_seq</field>
-            <field name="prefix">5000</field>
+            <field name="prefix">HOLA</field>
             <field name="padding">9</field>
             <field name="company_id" eval="False"/>
         </record>
