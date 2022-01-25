@@ -6,4 +6,25 @@
             </t>
         </xpath>
     </template>
+    
+    <template id="external_layout_background_inherit" inherit_id="web.external_layout_standard">
+        <xpath expr="//t[@t-name='web.external_layout_standard']" position="replace">
+            <t t-name="web.external_layout_standard">
+            </t>
+        </xpath>
+    </template>
+    
+    <template id="external_layout_background_inherit" inherit_id="web.external_layout_clean">
+        <xpath expr="//t[@t-name='web.external_layout_clean']" position="replace">
+            <t t-name="web.external_layout_clean">
+            </t>
+        </xpath>
+    </template>
+    
+    <template id="external_layout_background_inherit" inherit_id="web.external_layout_boxed">
+        <xpath expr="//t[@t-name='web.external_layout_boxed']" position="replace">
+            <t t-name="web.external_layout_boxed">
+            </t>
+        </xpath>
+    </template>
 </odoo>
