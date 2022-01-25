@@ -4,7 +4,7 @@
         <xpath expr="//div[hasclass('o_background_header')]" position="replace">
             <div></div>
         </xpath>
-        <xpath expr="//t[@t-attf-class='o_company_#{company.id}_layout article o_report_layout_background']" position="replace">
+        <xpath expr="//t[@t-attf-class='article o_report_layout_background']" position="replace">
             <div></div>
         </xpath>
         <xpath expr="//div[hasclass('text-center')]" position="replace">
@@ -16,7 +16,7 @@
         <xpath expr="//div[hasclass('row')]" position="replace">
             <div></div>
         </xpath>
-        <xpath expr="//t[@t-attf-class='article o_report_layout_standard o_company_#{company.id}_layout']" position="replace">
+        <xpath expr="//t[@t-attf-class='article o_report_layout_standard']" position="replace">
             <div></div>
         </xpath>
         <xpath expr="//div[hasclass('text-center')]" position="replace">
@@ -28,7 +28,7 @@
         <xpath expr="//div[hasclass('o_clean_header')]" position="replace">
             <div></div>
         </xpath>
-        <xpath expr="//t[@t-attf-class='article o_report_layout_clean o_company_#{company.id}_layout']" position="replace">
+        <xpath expr="//t[@t-attf-class='article o_report_layout_clean']" position="replace">
             <div></div>
         </xpath>
         <xpath expr="//div[hasclass('row')]" position="replace">
@@ -40,7 +40,7 @@
         <xpath expr="//div[hasclass('o_boxed_header')]" position="replace">
             <div></div>
         </xpath>
-        <xpath expr="//t[@t-attf-class='article o_report_layout_boxed o_company_#{company.id}_layout']" position="replace">
+        <xpath expr="//t[@t-attf-class='article o_report_layout_boxed']" position="replace">
             <div></div>
         </xpath>
         <xpath expr="//div[hasclass('text-center')]" position="replace">
