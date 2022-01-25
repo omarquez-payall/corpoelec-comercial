@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-    <template id="external_layout_background_inherit" inherit_id="web.external_layout_background">
-        <xpath expr="//div[hasclass('o_background_header')]" position="replace">
-        </xpath>
-        <xpath expr="//t[@t-call='web.address_layout']" position="replace">
-        </xpath>
-        <xpath expr="//div[hasclass('text-center')]" position="replace">
-        </xpath>
-    </template>
-    
-    <template id="external_layout_standard_inherit" inherit_id="web.external_layout_standard">
-        <xpath expr="//div[hasclass('row')]" position="replace">
-        </xpath>
-        <xpath expr="//t[@t-call='web.address_layout']" position="replace">
-        </xpath>
-        <xpath expr="//div[hasclass('text-center')]" position="replace">
-        </xpath>
-    </template>
     
     <template id="external_layout_clean_inherit" inherit_id="web.external_layout_clean">
         <xpath expr="//div[hasclass('o_clean_header')]" position="replace">
@@ -26,13 +9,5 @@
         <xpath expr="//div[hasclass('row')]" position="replace">
         </xpath>
     </template>
-    
-    <template id="external_layout_boxed_inherit" inherit_id="web.external_layout_boxed">
-        <xpath expr="//div[hasclass('o_boxed_header')]" position="replace">
-        </xpath>
-        <xpath expr="//t[@t-call='web.address_layout']" position="replace">
-        </xpath>
-        <xpath expr="//div[hasclass('text-center')]" position="replace">
-        </xpath>
-    </template>
+
 </odoo>
