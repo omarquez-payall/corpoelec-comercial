@@ -14,6 +14,7 @@ class PartnerCodeInherit( models.Model):
 
     @api.model
     def _get_next_sequence_number(self):
-        sequence = self.env['ir.sequence'].search([('code','=','partner_code_seq')])
-        next= sequence.get_next_char(sequence.number_next_actual)
-        return next
+        for record in self:
+            sequence = self.env['ir.sequence'].search([('code','=','partner_code_seq')])
+            next= sequence.get_next_char(sequence.number_next_actual)
+            return next
