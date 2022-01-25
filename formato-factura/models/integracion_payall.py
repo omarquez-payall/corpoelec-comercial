@@ -15,14 +15,19 @@ class IntegacionPayall( models.Model):
             }
             return result
         partner = self.env['res.partner'].search([['partner_code','=',res_partner_code]])
+
+        invoices = self.env['account.move'].search([['partner_id.id','=', partner.id], ['move_type','=','out_invoice']])
+        amount_due = 0
+        for invoice in range(0, len(invoices)):
+            amount_due += invoice.amount_residual
         result = {
             "code":"00",
-            "amount": partner.credit
+            "amount": amount_due
         }
         return result
     
     @api.model
-    def pagarDeduaCliente(self, amount, res_partner_code):
+    def pagarDeudaCliente(self, amount, res_partner_code):
         if (amount is None):
             result = { 
                 "code":"M4",
