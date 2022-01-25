@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <template id="external_layout_background_inherit" inherit_id="web.external_layout">
-        <xpath expr="//t[@t-name='web.external_layout']" position="replace">
-            <t t-name="web.external_layout">
-            </t>
+        <xpath expr="//div[hasclass('header')]" position="replace">
+        </xpath>
+        <xpath expr="//div[hasclass('footer')]" position="replace">
         </xpath>
     </template>
 </odoo>
