@@ -4,7 +4,7 @@ from odoo import models, fields, api
 
 class PartnerCodeInherit( models.Model):
     _inherit = 'res.partner'
-    partner_code = fields.Char(string = 'Código de Interlocutor', default=lambda self: self._get_next_sequence_number())
+    partner_code = fields.Char(string = 'Código de Interlocutor', default=lambda self: self._get_next_sequence_number() )
     
     @api.model
     def create(self, vals):
