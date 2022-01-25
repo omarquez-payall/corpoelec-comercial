@@ -6,11 +6,11 @@ class PartnerCodeInherit( models.Model):
     _inherit = 'res.partner'
     partner_code = fields.Char(string = 'Código de Interlocutor', default="lambda self: self.")
     
-    #@api.model
-    #def create(self, vals):
-    #    vals['partner_code'] = self.env['ir.sequence'].next_by_code('partner_code_seq')
-    #    result = super( PartnerCodeInherit, self).create(vals)
-    #    return result 
+    @api.model
+    def create(self, vals):
+        vals['partner_code'] = self.env['ir.sequence'].next_by_code('partner_code_seq')
+        result = super( PartnerCodeInherit, self).create(vals)
+        return result 
 
     #@api.model
     #def _get_next_sequence_number(self):
