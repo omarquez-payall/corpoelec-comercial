@@ -5,8 +5,11 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form" />
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='company_type']" position="after"> <field name="partner_code" /> </xpath>
-                <group><field name="partner_code" /></group>
+                <xpath expr="//field[@name='company_type']" position="after"> 
+                    <group>
+                        <field name="partner_code" placeholder="Código de Interlocutor" /> 
+                    </group>
+                </xpath>
             </field>
         </record>
 
