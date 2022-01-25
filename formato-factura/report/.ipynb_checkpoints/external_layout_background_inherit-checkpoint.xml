@@ -2,8 +2,37 @@
 <odoo>
     <template id="external_layout_background_inherit" inherit_id="web.external_layout_background">
         <xpath expr="//div[hasclass('o_background_header')]" position="replace">
+            <div></div>
         </xpath>
         <xpath expr="//div[hasclass('text-center')]" position="replace">
+            <div></div>
+        </xpath>
+    </template>
+    
+    <template id="external_layout_standard_inherit" inherit_id="web.external_layout_standard">
+        <xpath expr="//div[hasclass('o_background_header')]" position="replace">
+            <div></div>
+        </xpath>
+        <xpath expr="//div[hasclass('text-center')]" position="replace">
+            <div></div>
+        </xpath>
+    </template>
+    
+    <template id="external_layout_clean_inherit" inherit_id="web.external_layout_clean">
+        <xpath expr="//div[hasclass('o_background_header')]" position="replace">
+            <div></div>
+        </xpath>
+        <xpath expr="//div[hasclass('text-center')]" position="replace">
+            <div></div>
+        </xpath>
+    </template>
+    
+    <template id="external_layout_boxed_inherit" inherit_id="web.external_layout_boxed">
+        <xpath expr="//div[hasclass('o_background_header')]" position="replace">
+            <div></div>
+        </xpath>
+        <xpath expr="//div[hasclass('text-center')]" position="replace">
+            <div></div>
         </xpath>
     </template>
 </odoo>
