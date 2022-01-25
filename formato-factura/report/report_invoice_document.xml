@@ -199,7 +199,7 @@
           </table>
          </div>
     </div>
-    <div style="font-size: 7px; position: relative; top: 5px; width: 99.8%; background-color: #ccc;  padding: 1px; align-content: center; text-align: center;border: 1px solid black;">
+    <div style="font-size: 7px; position: relative; top: 5px; width: 100%; background-color: #ccc;  padding: 1px; align-content: center; text-align: center;border: 1px solid black;">
         OTROS SERVICIOS
     </div>
 
@@ -344,7 +344,7 @@
     </div>
     <!--     ###################### ELECTRICIDAD ###################### -->
     <div id="cuadroInformacionComercial" style="position: relative; width: 100%; top:5px; height: 103px; padding-top: 1px; ">
-      <div style="position: absolute; top: 11px; left: 37%; height: 80px; width: 27%; ">
+      <div style="position: absolute; top: 11px; left: 37%; height: 80px; width: 27%; align-content: center !important; text-align: center; ">
                 <img t-if="o.images.footer_icon_1" t-att-src="image_data_uri(o.images.footer_icon_1)" alt="" style=" height: 100%;"/>
           </div>
         <div id="electricidad" style="position:absolute; width: 27%;top:1px; border: 1px solid black;height: 95px; ">
