@@ -5,8 +5,6 @@
         </xpath>
         <xpath expr="//t[@t-call='web.address_layout']" position="replace">
         </xpath>
-        <xpath expr="//t[@t-raw='0']" position="replace">
-        </xpath>
         <xpath expr="//div[hasclass('text-center')]" position="replace">
         </xpath>
     </template>
@@ -15,8 +13,6 @@
         <xpath expr="//div[hasclass('row')]" position="replace">
         </xpath>
         <xpath expr="//t[@t-call='web.address_layout']" position="replace">
-        </xpath>
-        <xpath expr="//t[@t-raw='0']" position="replace">
         </xpath>
         <xpath expr="//div[hasclass('text-center')]" position="replace">
         </xpath>
@@ -27,8 +23,6 @@
         </xpath>
         <xpath expr="//t[@t-call='web.address_layout']" position="replace">
         </xpath>
-        <xpath expr="//t[@t-raw='0']" position="replace">
-        </xpath>
         <xpath expr="//div[hasclass('row')]" position="replace">
         </xpath>
     </template>
@@ -37,8 +31,6 @@
         <xpath expr="//div[hasclass('o_boxed_header')]" position="replace">
         </xpath>
         <xpath expr="//t[@t-call='web.address_layout']" position="replace">
-        </xpath>
-        <xpath expr="//t[@t-raw='0']" position="replace">
         </xpath>
         <xpath expr="//div[hasclass('text-center')]" position="replace">
         </xpath>
