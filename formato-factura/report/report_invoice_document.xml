@@ -8,7 +8,7 @@
                 <table style="width: 100%; height: 40px; /* border: 1px solid red; */border-collapse: collapse;">
                     <tr>
                         <td style="width: 40%; height: 100%; /* border: 1px solid red; */">
-                          <div style="width: 50%; height: 27px;"><img t-if="o.images.full_logo" t-att-src="image_data_uri(o.images.full_logo)" style="width: 100%; height: 100%;" alt="Logo"/></div>  <br></br>
+                          <div style="width: 50%;"><img t-if="o.images.full_logo" t-att-src="image_data_uri(o.images.full_logo)" style="width: 100%;" alt="Logo"/></div>  <br></br>
                           <span style="font-size: 6px ;">No. de Registro:</span> 
                           <span style="font-size: 6px ; margin-left: 17px;">2122220788</span> 
                           <span style="font-size: 6px ;margin-left: 40px;">No. Doc. Contable:</span> 
@@ -47,7 +47,7 @@
 
                 <div style="position: relative;height: 27px; width: 100%; margin-top: 10px; border: 1px solid black; background-color: #E7E3E3;">
                     <div style="position: absolute;">
-                        <div style="width: auto; height: 26px; left: 0; top: 0;">
+                        <div style="width: auto; height: 21px; left: 0; top: 0;">
                             <img t-if="o.images.logo" t-att-src="image_data_uri(o.images.logo)" style="height:100%;" alt="Logo"/>
                         </div> 
                     </div>
@@ -63,7 +63,7 @@
                        4010 Generación ,Captación y Distribución  de Energía Eléctrica
                     </div>
                     <div style="position: absolute; bottom: 0x; right: 0;">
-                        <div style="height: 26px; width: auto;"> <img t-if="o.images.header_logo" t-att-src="image_data_uri(o.images.header_logo)" style="height:100%;" alt="Logo"/></div>
+                        <div style="height: 21px; width: auto;"> <img t-if="o.images.header_logo" t-att-src="image_data_uri(o.images.header_logo)" style="height:100%;" alt="Logo"/></div>
                     </div>
                 </div>
 
@@ -302,7 +302,7 @@
          </div>
   </div>
   <div style="position:absolute; width: 27%;top: 94px;left: 35%; border: 1px solid black;height: 90px; ">
-    <div style="position: absolute; top: 1%; left: 6%; width: 15px;"><img t-if="o.images.service_icon_2" t-att-src="image_data_uri(o.images.service_icon_2)" alt="" style="width: 100%;" /></div>    
+    <div style="position: absolute; top: 1%; left: 6%; width: 15px;"><img t-if="o.images.service_icon_3" t-att-src="image_data_uri(o.images.service_icon_3)" alt="" style="width: 100%;" /></div>    
     <div style="position: absolute; top: 0; left: 0; height: 86.5px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
           <div style="width: 30px; margin-top: 45px ;margin-left: -10px ;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">GAS</div>
       </div>
