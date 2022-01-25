@@ -330,6 +330,15 @@
           </table>
          </div>
   </div>
+   <div style="position: absolute; top: 0; right: 0; height: 80px; width: 27%; ">
+        
+          <img t-if="o.images.payment_methods" t-att-src="image_data_uri(o.images.payment_methods)" alt="" style="width: 100%; height: 100%;"/>
+      </div>
+      <div style="position: absolute; top: 82px; right: 0; height: 80px; width: 27%; ">
+          <img src="img/advertisement.png" style="width: 100%; height: 100%;" alt="">
+          <img t-if="o.images.advertisement" t-att-src="image_data_uri(o.images.advertisement)" alt="" style="width: 100%; height: 100%;"/>
+
+      </div>  
   
   </div>
       <div style="font-size: 7px; position: relative; top: 5px; width: 100%; height: auto; background-color: #ccc;  padding: 1px; align-content: center; text-align: center;border: 1px solid black;">
@@ -337,7 +346,13 @@
     </div>
     <!--     ###################### ELECTRICIDAD ###################### -->
     <div id="cuadroInformacionComercial" style="position: relative; width: 100%; top:5px; height: 103px; padding-top: 1px; ">
+      <div style="position: absolute; top: 14px; left: 37%; height: 80px; width: 27%; ">
+                <img t-if="o.images.footer_icon_1" t-att-src="image_data_uri(o.images.footer_icon_1)" alt="" style="width: 100%; height: 100%;"/>
+          </div>
         <div id="electricidad" style="position:absolute; width: 27%;top:1px; border: 1px solid black;height: 95px; ">
+         <div style="position: absolute; top: 0; left: 8%; width: 13px;">
+            <img t-if="o.images.logo" t-att-src="image_data_uri(o.images.logo)" alt="" style="width: 100%; height: 100%;"/>
+         </div>
             <div style="position: absolute; top: 0; left: 0; height: 90px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
               <div style=" width: 100px; margin-top: 38px; margin-left: -45px; font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">ELECTRICIDAD</div>
             </div>
