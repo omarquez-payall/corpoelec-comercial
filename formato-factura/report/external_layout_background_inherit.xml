@@ -22,7 +22,7 @@
         <xpath expr="//div[hasclass('o_clean_header')]" position="replace">
             <div></div>
         </xpath>
-        <xpath expr="//div[hasclass('row mt8')]" position="replace">
+        <xpath expr="//div[hasclass('row')]" position="replace">
             <div></div>
         </xpath>
     </template>
