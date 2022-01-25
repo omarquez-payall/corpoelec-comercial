@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <template id="external_layout_background_inherit" inherit_id="web.external_layout_background">
-        <xpath expr="//t[@t-attf-class='o_company_#{company.id}_layout header']" position="replace">
-            <div></div>
+        <xpath expr="//t[@t-name='web.external_layout_background']" position="replace">
+            <t t-name="web.external_layout_background">
+            </t>
         </xpath>
     </template>
 </odoo>
