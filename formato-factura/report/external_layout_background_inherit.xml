@@ -16,7 +16,7 @@
         <xpath expr="//div[hasclass('row')]" position="replace">
             <div></div>
         </xpath>
-        <xpath expr="//div[hasclass('pt-5')]" position="replace">
+        <xpath expr="//t[@t-call='web.address_layout']" position="replace">
             <div></div>
         </xpath>
         <xpath expr="//div[hasclass('text-center')]" position="replace">
@@ -40,7 +40,7 @@
         <xpath expr="//div[hasclass('o_boxed_header')]" position="replace">
             <div></div>
         </xpath>
-        <xpath expr="//div[hasclass('pt-5')]" position="replace">
+        <xpath expr="//t[@t-call='web.address_layout']" position="replace">
             <div></div>
         </xpath>
         <xpath expr="//div[hasclass('text-center')]" position="replace">
