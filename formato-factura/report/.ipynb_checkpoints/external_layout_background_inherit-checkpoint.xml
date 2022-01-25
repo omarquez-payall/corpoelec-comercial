@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     
-    <template id="external_layout_clean_inherit" inherit_id="web.external_layout_clean">
-        <xpath expr="//div[hasclass('o_clean_header')]" position="replace">
-        </xpath>
-        <xpath expr="//t[@t-call='web.address_layout']" position="replace">
-        </xpath>
+    <template id="external_layout_standard_inherit" inherit_id="web.external_layout_standard">
         <xpath expr="//div[hasclass('row')]" position="replace">
+        </xpath>
+        <xpath expr="//div[hasclass('pt-5')]" position="replace">
+        </xpath>
+        <xpath expr="//div[hasclass('text-center')]" position="replace">
         </xpath>
     </template>
 
