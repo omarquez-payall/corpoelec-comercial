@@ -7,7 +7,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='company_type']" position="after"> 
                     <group>
-                        <field name="partner_code" placeholder="Código de Interlocutor" /> 
+                        <field name="partner_code" placeholder="Código de Interlocutor" context="{'turn_view_readonly':True}"/> 
                     </group>
                 </xpath>
             </field>
