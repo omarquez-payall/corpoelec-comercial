@@ -35,7 +35,26 @@
                     </div>
 
                     <div t-attf-class="footer o_standard_footer o_company_#{company.id}_layout">
-                       <div>este es el footer</div>
+                     
+    <div style="position: relative; width: 100%; height: 45px; top: 2px; border-top-color:#ccc; border-top-style:dashed; border-top-width:0.8px;  ">
+        <div style="position: absolute; width: 100%; top: 1px; height: auto; font-size: 6px; text-align: center; align-content: center;">PARA USO DE LA EMPRESA Y AGENTES DE RECAUDACION </div>
+        <div style="position: absolute; font-size: 4px; top:2px; left: 18%;">
+          OFICINA <br></br>
+          BANCO <br></br>
+          CUENTA <br></br>
+      </div> 
+      <div style="position: absolute; bottom: 17px; left: 0; width: 100%; text-align: left; align-content: left; font-size: 5px;">
+          Esta factura es emitida conforme a lo dispuesto en la Providencia Administrativa N.º SNAT/2009 0091 contenido en la Gaceta Oficial N°39.259 de fecha 08/09/2009 por CORPOELEC Rif G-20010012-1 Av Volimer entre Caracas y Alameda Edif Centro Empresarial Caracas piso 6 Of. 6.San Benardino Caracas, Venezuela Telf. (0212) 502.21.11
+      </div>
+  
+      <div style="position: absolute; bottom: 2px; left: 0;">
+           <div style="height: 25px; width: auto; ">
+            <img t-if="o.images.footer_icon_3" t-att-src="image_data_uri(o.images.footer_icon_3)" alt="" style="height: 100%;"/>
+          </div>
+      </div>
+    
+     
+      </div>
                     </div>
              
                 </t>
