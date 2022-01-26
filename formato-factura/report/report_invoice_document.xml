@@ -348,7 +348,7 @@
                 <img t-if="o.images.footer_icon_1" t-att-src="image_data_uri(o.images.footer_icon_1)" alt="" style=" height: 100%;"/>
           </div>
         <div id="electricidad" style="position:absolute; width: 27%;top:1px; border: 1px solid black;height: 95px; ">
-         <div style="position: absolute; top: 0; left: 8%; width: 16px;">
+         <div style="position: absolute; top: 0; left: 8%; width: 20px;">
             <img t-if="o.images.logo" t-att-src="image_data_uri(o.images.logo)" alt="" style="width: 100%;"/>
          </div>
             <div style="position: absolute; top: 0; left: 0; height: 90px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
