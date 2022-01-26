@@ -30,7 +30,7 @@
         'views/invoice_images.xml',
         'views/invoice_images_inherit.xml',
         'views/res_partner_inherit.xml',
-        #'report/external_layout_background_inherit.xml',
+        'report/external_layout_background_inherit.xml',
         'report/report_invoice_document.xml',
     ],
     # only loaded in demonstration mode
