@@ -393,6 +393,7 @@
         </div>
            <!--  ###################### SALDO VENCIDO ##################### -->
      <div id="saldoVencido" style="position:absolute; width: 27%;top: 1px; right: 0px; border: 1px solid black;height: 95px; ">
+        <div style="position: absolute; top: 1%; left: 7%; width: 15px; height: auto;"> <img t-if="o.images.footer_icon_2" t-att-src="image_data_uri(o.images.footer_icon_2)" alt="" style="width: 100%;"/></div>
         <div style="position: absolute; top: 0; left: 0; height: 90px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
           <div style=" width: 100px; margin-top: 39px; margin-left: -45px; font-size: 5.5px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">SALDO VENCIDO</div>
         </div>
@@ -473,7 +474,7 @@
   
       <div style="position: absolute; bottom: 2px; left: 0;">
            <div style="height: 14px; width: auto; font-size: 5px;">
-            <img t-if="o.images.logo" t-att-src="image_data_uri(o.images.logo)" alt="" style="height: 100%;"/>
+            <img t-if="o.images.footer_icon_3" t-att-src="image_data_uri(o.images.footer_icon_3)" alt="" style="height: 100%;"/>
           </div>
       </div>
     
