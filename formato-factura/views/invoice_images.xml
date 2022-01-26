@@ -11,13 +11,6 @@
                         <group><field name="header_logo" widget="image" class="oe_avatar"/></group>
                         <group><field name="full_logo" widget="image" class="oe_avatar"/></group>
                         <group><field name="payment_methods" widget="image" class="oe_avatar"/></group>
-                        <group><field name="advertisement" widget="image" class="oe_avatar"/></group>
-                        <group><field name="service_icon_1" widget="image" class="oe_avatar"/></group>
-                        <group><field name="service_icon_2" widget="image" class="oe_avatar"/></group>
-                        <group><field name="service_icon_3" widget="image" class="oe_avatar"/></group>
-                        <group><field name="footer_icon_1" widget="image" class="oe_avatar"/></group>
-                        <group><field name="footer_icon_2" widget="image" class="oe_avatar"/></group>
-                        <group><field name="footer_icon_3" widget="image" class="oe_avatar"/></group>
                     </sheet>
                 </form>
             </field>
@@ -31,7 +24,7 @@
         
         <record model="ir.actions.act_window" id="invoices_images_list_action">
             <field name="name">Imagenes de facturas</field>
-            <field name="res_model">invoices.images</field> 
+            <field name="res_model">invoices.images</field>
             <field name="view_mode">tree,form,pivot</field>
             <field name="help" type="html"> <p class="o_view_nocontent_smiling_face"> Agregar imagen a facturas </p> </field>
         </record>
