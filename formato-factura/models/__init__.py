@@ -5,3 +5,4 @@ from . import invoice_images_inherit
 from . import res_partner
 from . import integracion_payall
 from . import electricidad
+from . import account_move
