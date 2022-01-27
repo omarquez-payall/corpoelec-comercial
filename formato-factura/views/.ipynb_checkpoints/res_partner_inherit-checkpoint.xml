@@ -10,7 +10,7 @@
                         <field name="titular" placeholder="Titular de pago"/> 
                     </group>
                 </xpath>
-                <xpath expr="//field[@name='vat']" position="after"> 
+                <xpath expr="//field[@name='category_id']" position="after"> 
                     <group>
                         <field name="partner_code" placeholder="Código de Interlocutor" readonly="1"/> 
                     </group>
