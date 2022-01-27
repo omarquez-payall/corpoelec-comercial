@@ -5,6 +5,7 @@ from odoo import models, fields, api
 class PartnerCodeInherit( models.Model):
     _inherit = 'res.partner'
     partner_code = fields.Char(string = 'Código de Interlocutor', default=lambda self: self._get_next_sequence_number() )
+    titular = fields.Char(string = 'titular de pago', required=True )
     
     @api.model
     def create(self, vals):
