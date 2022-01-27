@@ -218,7 +218,7 @@
         <!--  ###################### ASEO ###################### -->
   <div id="aseo" style="position:absolute; width: 30%;top:1px; border: 1px solid black;height: 150px; ">
       <div style="position: absolute; top: 0; left: 0; height: 148px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
-        <div style="width: 30px; margin-top: 45px ;margin-left: -10px ;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">ASEO</div>
+        <div style="width: 30px; margin-top: 85px ;margin-left: -10px ;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">ASEO</div>
       </div>
       <div style="position: absolute; top:28px; font-size: 6px; text-align: center; align-content: center; width: 100%;">
           9000 Eliminacion de Desperdicios y Aguas Residuales <br></br>
@@ -229,7 +229,7 @@
           Fuerzas Armadas CC Camino Real nivel feria de planta 1 local B-L63. <br></br>
           módulo B sector centro Barcelona Anzoategui zona postal
       </div>
-      <table style="position: absolute; bottom: 26px; left: 11px; border-collapse: collapse; font-size: 8px !important;">
+      <table style="position: absolute; bottom: 26px; left: 13px; border-collapse: collapse; font-size: 8px !important;">
           <tr>
               <td>Servicio de Aseo Urbano</td> <td>Bs.</td>
           </tr>
@@ -287,7 +287,7 @@
         <div style=" width: 100px; margin-top: 35px; margin-left: -45px; font-size: 5.5px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">RELLENO SANITARIO</div>
       </div> 
 
-      <table style="position: absolute; bottom: 26px;   left: 11px; border-collapse: collapse; font-size: 8px !important;">
+      <table style="position: absolute; bottom: 26px;   left: 13px; border-collapse: collapse; font-size: 8px !important;">
           <tr>
               <td>Servicio de Relleno Sanitario:</td> <td style="vertical-align:top">Bs.</td>
           </tr>
