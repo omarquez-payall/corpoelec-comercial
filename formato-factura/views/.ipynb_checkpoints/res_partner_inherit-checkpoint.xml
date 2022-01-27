@@ -6,9 +6,7 @@
             <field name="inherit_id" ref="base.view_partner_form" />
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='category_id']" position="after">
-                    <group>
-                        <field name="titular" placeholder="Titular de pago"/>
-                    </group>
+                    <field name="titular" placeholder="Titular de pago"/>
                 </xpath>
                 <xpath expr="//field[@name='vat']" position="after"> 
                     <field name="partner_code" placeholder="Código de Interlocutor" readonly="1"/> 
