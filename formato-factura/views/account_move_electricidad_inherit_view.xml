@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//notebook" position="inside"> 
                     <page>
-                        <field name="electricidad_detalle.dias_lectura" /> 
+                        
                         <group>
 
                         </group>
