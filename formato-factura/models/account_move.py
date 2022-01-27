@@ -12,8 +12,9 @@ class AccountMove( models.Model):
         comodel_name = "servicio.electricidad", 
         inverse_name = "factura_id")
 
-    dias_lectura = fields.Integer( string = "Dias Lectura", required = True)
-
+    dias_lectura = fields.Integer( string = "Dias Lectura")
+    # COMO DEBE ESTAR EN PRODUCCION
+    #dias_lectura = fields.Integer( string = "Dias Lectura", required = True)
 
     #------------ Servicio Aseo --------------------------------
 
