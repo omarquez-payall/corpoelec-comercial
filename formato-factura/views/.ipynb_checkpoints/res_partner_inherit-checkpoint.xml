@@ -8,10 +8,8 @@
                 <xpath expr="//field[@name='category_id']" position="before">
                     <field name="titular" placeholder="Titular de pago"/>
                 </xpath>
-                <xpath expr="//field[@name='category_id']" position="after"> 
-                    <group>
-                        <field name="partner_code" placeholder="Código de Interlocutor" readonly="1"/> 
-                    </group>
+                <xpath expr="//field[@name='vat']" position="after"> 
+                    <field name="partner_code" placeholder="Código de Interlocutor" readonly="1"/> 
                 </xpath>
                 <notebook>
                     <page string="Cuentas contrato asociadas" >
