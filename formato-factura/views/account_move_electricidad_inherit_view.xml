@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="account_move_electricidad_view_form_inherit">
+            <field name="name">account.move.electricidad.form.inherit</field>
+            <field name="model">servicio.electricidad</field>
+            <field name="inherit_id" ref="account.view_move_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside"> 
+                    <page>
+                        <field name="dias_lectura" /> 
+                        <group>
+
+                        </group>
+                        <group>
+                            <group>
+                                <h4> Consumo</h4>
+                                <field name="lectura_actual"/>
+                                <field name="lectura_anterior" /> 
+                                <field name="factor_multiplicador"/>
+                                <field name="cantidad_equivalente" />
+                                <field name="kwh_equivalente" />
+                                <field name="monto_total_consumo"/>   
+                            </group>
+                            <group>
+                                <h4> Demanda</h4>
+                                <field name="demanda_asignada"/>
+                                <field name="demanda_leida"/>
+                                <field name="demanda_facturada" />
+                                <field name="monto_total_demanda" />    
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
