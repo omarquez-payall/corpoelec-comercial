@@ -36,6 +36,7 @@ class Electricidad( models.Model):
     @api.depends('lectura_actual','lectura_anterior','factor_multiplicador','dias_lectura', 'cantidad_medida')
     def _compute_kwh_equivalente( self):
         for record in self:
-            record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
+            if ( record.dias_lectura > 0 ):
+                record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
 
     
