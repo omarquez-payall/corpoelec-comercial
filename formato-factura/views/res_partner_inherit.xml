@@ -5,16 +5,20 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form" />
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='name']" position="after"> 
-                    <group>
-                        <field name="titular" placeholder="Titular de pago"/> 
-                    </group>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="titular" placeholder="Titular de pago"/>
                 </xpath>
                 <xpath expr="//field[@name='category_id']" position="after"> 
                     <group>
                         <field name="partner_code" placeholder="Código de Interlocutor" readonly="1"/> 
                     </group>
                 </xpath>
+                <notebook>
+                    <page string="Cuentas contrato asociadas" >
+                    </page>
+                    <page string="Saldos vencidos" >
+                    </page>
+                </notebook>
             </field>
         </record>
 
