@@ -9,9 +9,6 @@
                 <xpath expr="//field[@name='payment_reference']" position="after"> 
                     <field name="dias_lectura" /> 
                 </xpath>
-                <xpath expr="//notebook" position="inside">
-                    <field name="electricidad_detalle"/>
-                </xpath>
             </field>
         </record>
     </data>

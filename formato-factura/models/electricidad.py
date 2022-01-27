@@ -3,8 +3,9 @@
 from odoo import models, fields, api
 
 class Electricidad( models.Model):
-    _name = "servicio.electricidad"
-    _description = "Modelo creado para el detalle del servicio de electricidad"
+    _inherit = 'account.move'
+    #_name = "servicio.electricidad"
+    #_description = "Modelo creado para el detalle del servicio de electricidad"
 
     #-------------- FACTURA ---------------------------------------
     #lineas_detalle = fields.
