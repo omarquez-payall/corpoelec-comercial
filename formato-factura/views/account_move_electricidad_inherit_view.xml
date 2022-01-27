@@ -3,31 +3,31 @@
     <data>
         <record model="ir.ui.view" id="account_move_electricidad_view_form_inherit">
             <field name="name">account.move.electricidad.form.inherit</field>
-            <field name="model">servicio.electricidad</field>
+            <field name="model">account.move</field>
             <field name="inherit_id" ref="account.view_move_form" />
             <field name="arch" type="xml">
                 <xpath expr="//notebook" position="inside"> 
                     <page>
-                        <field name="dias_lectura" /> 
+                        <field name="electricidad_detalle.dias_lectura" /> 
                         <group>
 
                         </group>
                         <group>
                             <group>
                                 <h4> Consumo</h4>
-                                <field name="lectura_actual"/>
-                                <field name="lectura_anterior" /> 
-                                <field name="factor_multiplicador"/>
-                                <field name="cantidad_equivalente" />
-                                <field name="kwh_equivalente" />
-                                <field name="monto_total_consumo"/>   
+                                <field name="electricidad_detalle.lectura_actual"/>
+                                <field name="electricidad_detalle.lectura_anterior" /> 
+                                <field name="electricidad_detalle.factor_multiplicador"/>
+                                <field name="electricidad_detalle.cantidad_equivalente" />
+                                <field name="electricidad_detalle.kwh_equivalente" />
+                                <field name="electricidad_detalle.monto_total_consumo"/>   
                             </group>
                             <group>
                                 <h4> Demanda</h4>
-                                <field name="demanda_asignada"/>
-                                <field name="demanda_leida"/>
-                                <field name="demanda_facturada" />
-                                <field name="monto_total_demanda" />    
+                                <field name="electricidad_detalle.demanda_asignada"/>
+                                <field name="electricidad_detalle.demanda_leida"/>
+                                <field name="electricidad_detalle.demanda_facturada" />
+                                <field name="electricidad_detalle.monto_total_demanda" />    
                             </group>
                         </group>
                     </page>
