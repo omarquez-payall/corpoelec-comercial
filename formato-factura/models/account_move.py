@@ -8,9 +8,9 @@ class AccountMove( models.Model):
     #------------------- Relacion con los servicios ------------------
 
     #------------ Servicio Electrividad ------------------------
-    electricidad_detalle = fields.One2many(
-        comodel_name = "servicio.electricidad", 
-        inverse_name = "factura_id")
+    #electricidad_detalle = fields.One2many(
+    #    comodel_name = "servicio.electricidad", 
+    #    inverse_name = "factura_id")
 
     dias_lectura = fields.Integer( string = "Dias Lectura")
     # COMO DEBE ESTAR EN PRODUCCION
