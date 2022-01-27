@@ -18,8 +18,8 @@ class Electricidad( models.Model):
     lectura_actual = fields.Integer( string = "Lectura Actual", store=True)
     lectura_anterior = fields.Integer( string = "Lectura Anterior", store=True)
     factor_multiplicador = fields.Integer( string = "Factor Multiplicador", store=True)
-    cantidad_medida = fields.Integer( string = "Cantidad Medida", compute ='_compute_cantidad_medida')
-    kwh_equivalente = fields.Float( string = "kwh Equivalente", compute ='_compute_kwh_equivalente')
+    cantidad_medida = fields.Integer( string = "Cantidad Medida")
+    kwh_equivalente = fields.Float( string = "kwh Equivalente")
     monto_total_consumo = fields.Integer( string = "Monto total consumo", store=True)
 
     #-------------- SECCION DE DEMANDA ---------------------------
@@ -28,12 +28,12 @@ class Electricidad( models.Model):
     demanda_facturada = fields.Integer( string = "Demanda Facturada", store=True)
     monto_total_demanda = fields.Integer( string = "Monto total demanda", store=True)
 
-    @api.depends('lectura_actual','lectura_anterior','factor_multiplicador')
+    @api.onchange('lectura_actual','lectura_anterior','factor_multiplicador')
     def _compute_cantidad_medida( self):
         for record in self:
             record.cantidad_medida = ( record.lectura_actual - record.lectura_anterior) * record.factor_multiplicador
 
-    @api.depends('lectura_actual','lectura_anterior','factor_multiplicador','dias_lectura', 'cantidad_medida')
+    @api.onchange('lectura_actual','lectura_anterior','factor_multiplicador','dias_lectura', 'cantidad_medida')
     def _compute_kwh_equivalente( self):
         for record in self:
             if ( record.dias_lectura > 0 ):
