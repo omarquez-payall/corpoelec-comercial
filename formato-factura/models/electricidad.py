@@ -11,7 +11,7 @@ class Electricidad( models.Model):
     factura_id = fields.Many2one(
         comodel_name = "account.move"
     )
-    dias_lectura = fields.Integer( string ="Dias Lectura", related ="factura_id.")
+    dias_lectura = fields.Integer( string ="Dias Lectura", related ="factura_id.dias_lectura")
 
     #-------------- SECCION DE CONSUMO ----------------------------
     lectura_actual = fields.Integer( string = "Lectura Actual", store=True)
