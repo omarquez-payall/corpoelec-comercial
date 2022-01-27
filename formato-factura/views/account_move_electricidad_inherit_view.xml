@@ -18,7 +18,7 @@
                                 <field name="lectura_actual"/>
                                 <field name="lectura_anterior" /> 
                                 <field name="factor_multiplicador"/>
-                                <field name="cantidad_equivalente" />
+                                <field name="cantidad_medida" />
                                 <field name="kwh_equivalente" />
                                 <field name="monto_total_consumo"/>   
                             </group>
