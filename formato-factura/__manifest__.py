@@ -36,5 +36,6 @@
     ],
     # only loaded in demonstration mode
     'demo': [
+        'data/product.xml'
     ],
 }

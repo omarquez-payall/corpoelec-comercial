@@ -17,5 +17,5 @@ class AccountMove( models.Model):
     #dias_lectura = fields.Integer( string = "Dias Lectura", required = True)
 
     #------------ Servicio Aseo --------------------------------
-
+    
     #------------ Servicio Relleno Sanitario -------------------
