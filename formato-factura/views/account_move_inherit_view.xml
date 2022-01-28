@@ -9,6 +9,15 @@
                 <xpath expr="//field[@name='payment_reference']" position="after"> 
                     <field name="dias_lectura" /> 
                 </xpath>
+                <xpath expr="//button[@name='action_post']" position="after"> 
+                    <button 
+                        name="cargar_productos_electricidad" 
+                        attrs="{'invisible': ['|', '|', ('state', '!=', 'draft'), ('auto_post', '=', True), ('move_type', '!=', 'entry')]}"
+                        groups="account.group_account_invoice"
+                        type="object"
+                        class="oe_highlight"
+                    /> 
+                </xpath>
             </field>
         </record>
     </data>

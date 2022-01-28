@@ -36,8 +36,5 @@ class Electricidad( models.Model):
                 record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
     
 
-    #CREAR LINEAS DEL SERVICIO DE ELECTRICIDAD, ASEO Y RELLENO
-
-    #@api.model
-    #def cargar_productos_electricidad(self):
+    
         

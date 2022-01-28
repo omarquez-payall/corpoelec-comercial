@@ -16,6 +16,17 @@ class AccountMove( models.Model):
     # COMO DEBE ESTAR EN PRODUCCION
     #dias_lectura = fields.Integer( string = "Dias Lectura", required = True)
 
-    #------------ Servicio Aseo --------------------------------
-    
-    #------------ Servicio Relleno Sanitario -------------------
+    #CREAR LINEAS DEL SERVICIO DE ELECTRICIDAD, ASEO Y RELLENO
+
+    @api.model
+    def cargar_productos_electricidad(self):
+        products = self.env['product.product'].search( [['precargar','=',True]])
+        for i in len( products):
+            # CAMBIAR ACCOUNT_ID CUANDO SE SEPA A CUAL VA
+            self.invoice_line.create({
+                'name': products[i].name,
+                'price_unit': products[i].price,
+                'quantity': 1,
+                'product_id': products[i].id,
+                'account_id': 1
+            })
