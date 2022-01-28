@@ -9,14 +9,14 @@
                 <xpath expr="//field[@name='payment_reference']" position="after"> 
                     <field name="dias_lectura" /> 
                 </xpath>
-                <xpath expr="//button[@string='Confirm']" position="after"> 
+                <header > 
                     <button 
                         name="cargar_productos_electricidad"
                         groups="account.group_account_invoice"
                         type="object"
                         class="oe_highlight"
                     /> 
-                </xpath>
+                </header>
             </field>
         </record>
     </data>
