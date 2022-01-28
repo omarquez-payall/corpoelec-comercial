@@ -13,6 +13,7 @@
                     <button 
                         name="cargar_productos_electricidad"
                         groups="account.group_account_invoice"
+                        string="Cargar Data Electricidad"
                         type="object"
                         class="oe_highlight"
                     /> 
