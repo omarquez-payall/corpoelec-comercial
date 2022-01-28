@@ -28,9 +28,16 @@ class Electricidad( models.Model):
     demanda_facturada = fields.Integer( string = "Demanda Facturada", store=True)
     monto_total_demanda = fields.Integer( string = "Monto total demanda", store=True)
 
-    @api.onchange('lectura_actual','lectura_anterior','factor_multiplicador')
+    @api.onchange('lectura_actual','lectura_anterior','factor_multiplicador','dias_lectura')
     def _compute_cantidad_medida( self):
         for record in self:
             record.cantidad_medida = ( record.lectura_actual - record.lectura_anterior) * record.factor_multiplicador
             if (record.dias_lectura > 0):
                 record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
+    
+
+    #CREAR LINEAS DEL SERVICIO DE ELECTRICIDAD, ASEO Y RELLENO
+
+    #@api.model
+    #def cargar_productos_electricidad(self):
+        

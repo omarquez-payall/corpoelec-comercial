@@ -6,3 +6,4 @@ from . import res_partner
 from . import integracion_payall
 from . import account_move
 from . import electricidad
+from . import product

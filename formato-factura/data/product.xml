@@ -19,6 +19,7 @@
             <field name="standard_price">1</field>
             <field name="list_price">1</field>
             <field name="type">service</field>
+            <field name="precargar">True</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
         </record>
@@ -27,6 +28,7 @@
             <field name="categ_id" ref="product_category_2"/>
             <field name="standard_price">1</field>
             <field name="list_price">1</field>
+            <field name="precargar">True</field>
             <field name="type">service</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
@@ -36,6 +38,7 @@
             <field name="categ_id" ref="product_category_2"/>
             <field name="standard_price">1</field>
             <field name="list_price">1</field>
+            <field name="precargar">True</field>
             <field name="type">service</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
