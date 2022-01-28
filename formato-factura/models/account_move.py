@@ -18,7 +18,7 @@ class AccountMove( models.Model):
 
     #CREAR LINEAS DEL SERVICIO DE ELECTRICIDAD, ASEO Y RELLENO
 
-    @api.model
+    
     def cargar_productos_electricidad(self):
         products = self.env['product.product'].search( [['precargar','=',True]])
         for i in len( products):
