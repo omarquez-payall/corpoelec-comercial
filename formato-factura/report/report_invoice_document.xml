@@ -214,7 +214,7 @@
 
 
     
-    <div id="cuadroOtrosServicios" style="position: relative; width: 100%; top:5px; height: 335px; padding-top: 1px;">
+    <div id="cuadroOtrosServicios" style="position: relative; width: 100%; top:5px; height: 315px; padding-top: 1px;">
         <!--  ###################### ASEO ###################### -->
   <div id="aseo" style="position:absolute; width: 30%;top:1px; border: 1px solid black;height: 140px; ">
       <div style="position: absolute; top: 0; left: 0; height: 138px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
