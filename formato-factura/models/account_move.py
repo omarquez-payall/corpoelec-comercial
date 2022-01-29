@@ -23,12 +23,12 @@ class AccountMove( models.Model):
         for record in self:
             products = self.env['product.product'].search( [['precargar','=',True]])
             self.narration = products
-            #for i in len( products):
-            #    # CAMBIAR ACCOUNT_ID CUANDO SE SEPA A CUAL VA
-            #    self.invoice_line.create({
-            #        'name': products[i].name,
-            #        'price_unit': products[i].price,
-            #        'quantity': 1,
-            #        'product_id': products[i].id,
-            #        'account_id': 1
-            #    })
+            for product in products:
+                #CAMBIAR ACCOUNT_ID CUANDO SE SEPA A CUAL VA
+                self.invoice_line.create({
+                    'name': product.name,
+                    'price_unit': product.price,
+                    'quantity': 1,
+                    'product_id': product.id,
+                    'account_id': 1
+                })
