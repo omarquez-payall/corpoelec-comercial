@@ -16,6 +16,8 @@
                         string="Cargar Data Electricidad"
                         type="object"
                         class="oe_highlight"
+                        attrs="{'invisible': ['|', '|', ('state', '!=', 'draft'), ('move_type', '=', 'entry'),('cargar_productos','=',True)]}"/>
+                        
                     /> 
                 </header>
             </field>
