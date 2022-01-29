@@ -13,7 +13,7 @@ class AccountMove( models.Model):
     #    inverse_name = "factura_id")
 
     dias_lectura = fields.Integer( string = "Dias Lectura")
-    cargar_productos = field.Boolean( string="Cargar", default = False)
+    cargar_productos = fields.Boolean( string="Cargar", default = False)
     # COMO DEBE ESTAR EN PRODUCCION
     #dias_lectura = fields.Integer( string = "Dias Lectura", required = True)
 
