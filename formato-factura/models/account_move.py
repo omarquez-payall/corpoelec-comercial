@@ -21,6 +21,7 @@ class AccountMove( models.Model):
     
     def cargar_productos_electricidad(self):
         products = self.env['product.product'].search( [['precargar','=',True]])
+        self.narration = products
         for i in len( products):
             # CAMBIAR ACCOUNT_ID CUANDO SE SEPA A CUAL VA
             self.invoice_line.create({
