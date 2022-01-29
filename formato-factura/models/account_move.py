@@ -25,14 +25,13 @@ class AccountMove( models.Model):
             products = self.env['product.product'].search( [['precargar','=',True]])
             
             for product in products:
-                if product.id not in record.invoice_line_ids.product_id:
-                    #CAMBIAR ACCOUNT_ID CUANDO SE SEPA A CUAL VA
-                    record.invoice_line_ids.create({
-                        'name': product.name,
-                        'price_unit': product.price,
-                        'quantity': 1,
-                        'product_id': product.id,
-                        'account_id': 1,
-                        'move_id': record.id
-                    })
-                    record.cargar_productos = True
+                #CAMBIAR ACCOUNT_ID CUANDO SE SEPA A CUAL VA
+                record.invoice_line_ids.create({
+                    'name': product.name,
+                    'price_unit': product.price,
+                    'quantity': 1,
+                    'product_id': product.id,
+                    'account_id': 1,
+                    'move_id': record.id
+                })
+                record.cargar_productos = True
