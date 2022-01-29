@@ -25,7 +25,7 @@ class AccountMove( models.Model):
             self.narration = products
             for product in products:
                 #CAMBIAR ACCOUNT_ID CUANDO SE SEPA A CUAL VA
-                self.invoice_line.create({
+                self.invoice_line_ids.create({
                     'name': product.name,
                     'price_unit': product.price,
                     'quantity': 1,
