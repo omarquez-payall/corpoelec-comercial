@@ -30,5 +30,6 @@ class AccountMove( models.Model):
                     'price_unit': product.price,
                     'quantity': 1,
                     'product_id': product.id,
-                    'account_id': 1
+                    'account_id': 1,
+                    'move_id': self.id
                 })
