@@ -23,8 +23,9 @@ class AccountMove( models.Model):
     def cargar_productos_electricidad(self):
         for record in self:
             products = self.env['product.product'].search( [['precargar','=',True]])
-            if products not in record.invoice_line_ids: 
-                for product in products:
+            
+            for product in products:
+                if product.id not in record.invoice_line_ids.product_id:
                     #CAMBIAR ACCOUNT_ID CUANDO SE SEPA A CUAL VA
                     record.invoice_line_ids.create({
                         'name': product.name,
