@@ -217,7 +217,7 @@
         <!--  ###################### ASEO ###################### -->
   <div id="aseo" style="position:absolute; width: 30%;top:1px; border: 1px solid black;height: 140px; ">
       <div style="position: absolute; top: 0; left: 0; height: 138px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
-        <div style="width: 30px; margin-top: 85px ;margin-left: -10px ;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">ASEO</div>
+        <div style="width: 30px; margin-top: 75px ;margin-left: -10px ;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">ASEO</div>
       </div>
       <div style="position: absolute; top:28px; font-size: 6px; text-align: center; align-content: center; width: 100%;">
           9000 Eliminacion de Desperdicios y Aguas Residuales <br></br>
@@ -283,7 +283,7 @@
   <div style="position:relative; width: 30%;top:0; left: 35%; border: 1px solid black;height: 140px; ">
     <div style="position: absolute; top: 1%; left: 6%; width: 15px;"><img t-if="o.images.service_icon_1" t-att-src="image_data_uri(o.images.service_icon_1)" alt="" style="width: 100%;" /></div>  
     <div style="position: absolute; top: 0; left: 0; height: 138px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
-        <div style=" width: 100px; margin-top: 35px; margin-left: -45px; font-size: 5.5px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">RELLENO SANITARIO</div>
+        <div style=" width: 100px; margin-top: 55px; margin-left: -45px; font-size: 5.5px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">RELLENO SANITARIO</div>
       </div> 
 
       <table style="position: absolute; bottom: 26px; left: 13px; border-collapse: collapse; font-size: 8px !important;">
@@ -312,7 +312,7 @@
   <div style="position:absolute; width: 30%;top: 146px;left: 35%; border: 1px solid black;height: 140px; ">
     <div style="position: absolute; top: 1%; left: 6%; width: 15px;"><img t-if="o.images.service_icon_3" t-att-src="image_data_uri(o.images.service_icon_3)" alt="" style="width: 100%;" /></div>    
     <div style="position: absolute; top: 0; left: 0; height: 138px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
-          <div style="width: 30px; margin-top: 45px ;margin-left: -10px ;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">GAS</div>
+          <div style="width: 30px; margin-top: 75px ;margin-left: -10px ;font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">GAS</div>
       </div>
 
       <table style="position: absolute; bottom: 26px; left: 20px; border-collapse: collapse; font-size: 8px !important;">
@@ -405,13 +405,13 @@
         <div style="position: absolute; top: 0; left: 0; height: 138px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
           <div style=" width: 100px; margin-top: 39px; margin-left: -45px; font-size: 5.5px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">SALDO VENCIDO</div>
         </div>
-        <div style="position: absolute; top:1px; font-size: 3px; text-align: center; align-content: center; width: 100%;">
+        <div style="position: absolute; top:2px; left: 17%; font-size: 5px; text-align: center; align-content: center; width: 80%;">
             Administradora Serdeco , C.A. RIF: J-00240703-1 NIT: 006396895 Capital Bs <br></br>
             100.000.000,00 Av. Volimer c/Caracas Alameda Edif. Ctro. Empresarial de <br></br>
             Caracas, Piso 11 Ofic Serdeco, Urb. San Bernandino
         </div>
 
-        <table style="position: absolute; top: 32px; left: 20px; border-collapse: collapse; font-size: 6px !important;">
+        <table style="position: absolute;  bottom: 26px; left: 13px; border-collapse: collapse; font-size: 6px !important;">
             <tr>
                 <td>Eléctricidad, Saldo Vencido</td> <td style="vertical-align:top">Bs.</td>
             </tr>
@@ -447,7 +447,7 @@
         </div>
 
         <div style="position: absolute !important; bottom: 2px; right: 0; ">
-            <table style="font-size: 6.5px;border-collapse: collapse;">
+            <table style="font-size: 8px;border-collapse: collapse;">
                 <tr>
                     <td style="padding-right: 4px;width: 75px;">ENERGIA</td>
                     <td style="background-color: #ccc; width: 25px;">Bs.</td>
