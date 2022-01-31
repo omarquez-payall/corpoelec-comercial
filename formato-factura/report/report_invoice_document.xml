@@ -446,7 +446,7 @@
             CONSERVE ESTA FACTURA SU CANCELACIÓN NO PRUEBA EL PAGO DE LAS ANTERIORES
         </div>
 
-        <div style="position: absolute !important; bottom: 40px; right: 0; ">
+        <div style="position: absolute !important; top: 2px; right: 0; ">
             <table style="font-size: 10px;border-collapse: collapse;">
                 <tr>
                     <td style="padding-right: 4px;width: 120px;">ENERGIA</td>
