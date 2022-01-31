@@ -15,7 +15,10 @@
                                     name="linea_electricidad"
                                     mode="tree"
                                 >
-                                    <tree>
+                                    <tree editable="bottom" >
+                                        <control>
+                                            <create name="add_line_control" string="Add a line"/>
+                                        </control>
                                         <field name="nombre_cargo"/>
                                         <field name="cantidad" /> 
                                         <field name="precio_unidad" />
