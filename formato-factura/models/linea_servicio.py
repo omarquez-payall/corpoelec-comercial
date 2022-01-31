@@ -8,7 +8,7 @@ class LineaServicio( models.Model):
 
 
 
-    
+    move_id = fields.Many2one( comodel_name = "account.move", string = "Linea de Servicio")
     nombre_cargo = fields.Char( string = "Cargo")
     cantidad = fields.Integer( string = "Cantidad")
     precio_unidad = fields.Integer( string = "Precio")

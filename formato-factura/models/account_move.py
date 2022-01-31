@@ -6,7 +6,11 @@ class AccountMove( models.Model):
     _inherit = 'account.move'
 
     #------------------- Relacion con los servicios ------------------
-
+    linea_electricidad = fields.One2many(
+        comodel_name="linea.servicio", 
+        inverse_name="move_id",
+        
+        states={'draft': [('readonly', False)]})
     #------------ Servicio Electrividad ------------------------
     #electricidad_detalle = fields.One2many(
     #    comodel_name = "servicio.electricidad", 
@@ -17,7 +21,6 @@ class AccountMove( models.Model):
     saldo_vencido = fields.Float( string="Saldo Vencido", default = 0.0)
     # COMO DEBE ESTAR EN PRODUCCION
     #dias_lectura = fields.Integer( string = "Dias Lectura", required = True)
-
     #CREAR LINEAS DEL SERVICIO DE ELECTRICIDAD, ASEO Y RELLENO
 
     

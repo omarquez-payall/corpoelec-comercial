@@ -8,26 +8,30 @@
             <field name="arch" type="xml">
                 <xpath expr="//notebook" position="inside"> 
                     <page string="Electricidad">
+                        <group>
                         
-                        <group>
-                            <h3> LINEAS PROXIMAMENTE</h3>
-                        </group>
-                        <group>
                             <group>
-                                <h4> Consumo</h4>
-                                <field name="lectura_actual"/>
-                                <field name="lectura_anterior" /> 
-                                <field name="factor_multiplicador"/>
-                                <field name="cantidad_medida" />
-                                <field name="kwh_equivalente" />
-                                <field name="monto_total_consumo"/>   
+                                <h3> LINEAS PROXIMAMENTE</h3>
                             </group>
                             <group>
-                                <h4> Demanda</h4>
-                                <field name="demanda_asignada"/>
-                                <field name="demanda_leida"/>
-                                <field name="demanda_facturada" />
-                                <field name="monto_total_demanda" />    
+                                <group>
+                                    <group>
+                                        <h4> Consumo</h4>
+                                        <field name="lectura_actual"/>
+                                        <field name="lectura_anterior" /> 
+                                        <field name="factor_multiplicador"/>
+                                        <field name="cantidad_medida" />
+                                        <field name="kwh_equivalente" />
+                                        <field name="monto_total_consumo"/>   
+                                    </group>
+                                    <group>
+                                        <h4> Demanda</h4>
+                                        <field name="demanda_asignada"/>
+                                        <field name="demanda_leida"/>
+                                        <field name="demanda_facturada" />
+                                        <field name="monto_total_demanda" />    
+                                    </group>
+                                </group>
                             </group>
                         </group>
                     </page>
