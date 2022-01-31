@@ -6,11 +6,7 @@ class AccountMove( models.Model):
     _inherit = 'account.move'
 
     #------------------- Relacion con los servicios ------------------
-    linea_electricidad = fields.One2many(
-        comodel_name="linea.servicio", 
-        inverse_name="move_id",
-        
-        states={'draft': [('readonly', False)]})
+    
     #------------ Servicio Electrividad ------------------------
     #electricidad_detalle = fields.One2many(
     #    comodel_name = "servicio.electricidad", 

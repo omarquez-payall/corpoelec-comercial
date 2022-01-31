@@ -13,7 +13,13 @@ class Electricidad( models.Model):
     #    comodel_name = "account.move"
     #)
     #dias_lectura = fields.Integer( string ="Dias Lectura", related ="factura_id.dias_lectura")
-
+    linea_electricidad = fields.One2many(
+        comodel_name="linea.servicio", 
+        inverse_name="move_id",
+        
+        states={'draft': [('readonly', False)]})
+    
+    subtotal_electricidad = fields.Float( string="Subtotal Electricidad", store=True)
     #-------------- SECCION DE CONSUMO ----------------------------
     lectura_actual = fields.Integer( string = "Lectura Actual", store=True)
     lectura_anterior = fields.Integer( string = "Lectura Anterior", store=True)
@@ -36,5 +42,10 @@ class Electricidad( models.Model):
                 record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
     
 
-    
+    @api.onchange('linea_electricidad')
+    def _onchange_subtotal(self):
+        for record in self:
+            if record.linea_electricidad is not None:
+                for line in record.linea_electricidad:
+                    record.subtotal_electricidad += line["subtotal"]
         
