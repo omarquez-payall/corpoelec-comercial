@@ -21,19 +21,20 @@
                 </xpath>
                 <xpath expr="//notebook" position="inside"> 
                     <page string="Saldo Vencido">
-                        
-                        <group>
-                            <field name="saldo_vencido"/>
-                        </group>
                         <group>
                             <group>
-                                <h4> Prueba Grupo 1</h4>
-                                
+                                <field name="saldo_vencido"/>
                             </group>
                             <group>
-                                <h4> Prueba Grupo 2</h4>
-                                
-                                   
+                                <group>
+                                    <h4> Prueba Grupo 1</h4>
+                                    
+                                </group>
+                                <group>
+                                    <h4> Prueba Grupo 2</h4>
+                                    
+                                    
+                                </group>
                             </group>
                         </group>
                     </page>
