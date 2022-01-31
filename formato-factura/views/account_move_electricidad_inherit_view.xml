@@ -9,13 +9,11 @@
                 <xpath expr="//notebook" position="inside"> 
                     <page string="Electricidad">
                         <group>
-                        
-                            <group >
-                                <field 
+                            <field 
                                     name="linea_electricidad"
                                     mode="tree"
                                 >
-                                    <tree >
+                                    <tree editable="bottom" >
                                         <control>
                                             <create name="add_line_control" string="Add a line"/>
                                         </control>
@@ -25,6 +23,8 @@
                                         <field name="subtotal" />
                                     </tree>
                                 </field>
+                            <group >
+                                
                             </group>
                             <group col="6" colspan="6">
                                 <group col="6" colspan="6">
