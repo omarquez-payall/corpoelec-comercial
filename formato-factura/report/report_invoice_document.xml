@@ -351,27 +351,27 @@
         INFORMACIÓN COMERCIAL
     </div>
     <!--     ###################### ELECTRICIDAD ###################### -->
-    <div id="cuadroInformacionComercial" style="position: relative; width: 100%; top:5px; height: 103px; padding-top: 1px; ">
-      <div style="position: absolute; top: 11px; left: 37%; height: 80px; width: 27%; align-content: center !important; text-align: center; ">
+    <div id="cuadroInformacionComercial" style="position: relative; width: 100%; top:5px; height: 148px; padding-top: 1px; ">
+      <div style="position: absolute; top: 11px; left: 35%; height: 140px; width: 30%; align-content: center !important; text-align: center; ">
                 <img t-if="o.images.footer_icon_1" t-att-src="image_data_uri(o.images.footer_icon_1)" alt="" style=" height: 100%;"/>
           </div>
-        <div id="electricidad" style="position:absolute; width: 27%;top:1px; border: 1px solid black;height: 95px; ">
+        <div id="electricidad" style="position:absolute; width: 30%;top:1px; border: 1px solid black;height: 95px; ">
          <div style="position: absolute; top: 0; left: 6%; width: 20px;">
             <img t-if="o.images.logo" t-att-src="image_data_uri(o.images.logo)" alt="" style="width: 100%;"/>
          </div>
-            <div style="position: absolute; top: 0; left: 0; height: 90px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
+            <div style="position: absolute; top: 0; left: 0; height: 138px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
               <div style=" width: 100px; margin-top: 38px; margin-left: -45px; font-size: 6px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">ELECTRICIDAD</div>
             </div>
-            <div style="position: absolute; top:12px; font-size: 6px; text-align: center; align-content: center; width: 100%;">
+            <div style="position: absolute; top:28px; font-size: 6px; text-align: center; align-content: center; width: 100%;">
                 4010 Eliminacion de Desperdicios y Aguas Residuales <br></br>
                 Sanamiento y Actividades Similares
             </div>
-            <div style="position: absolute; top:1px; font-size: 3px; text-align: center; align-content: center; width: 100%;">
+            <div style="position: absolute; top:2px; left: 17%; font-size: 5px; text-align: center; align-content: center; width: 80%;">
                 Corporación Eléctrica Nacional , S.A (CORPOELEC) Rif G-20010014-1 Av. <br></br>
                 Volimer entre Caracas y Alameda Edif. Centro Empresarial Caracas Piso 6 Of. 8, <br></br>
                 San Bernandino Caracas. Venezuela Telf. (0212) 502.21.11
             </div>
-            <table style="position: absolute; top: 32px; left: 20px; border-collapse: collapse; font-size: 6px !important;">
+            <table style="position: absolute; bottom: 26px; left: 20px; border-collapse: collapse; font-size: 8px !important;">
                 <tr>
                     <td>Servicio de Electricidad</td> <td>Bs.</td>
                 </tr>
@@ -400,7 +400,7 @@
                </div>
         </div>
            <!--  ###################### SALDO VENCIDO ##################### -->
-     <div id="saldoVencido" style="position:absolute; width: 27%;top: 1px; right: 0px; border: 1px solid black;height: 95px; ">
+     <div id="saldoVencido" style="position:absolute; width: 30%;top: 1px; right: 0px; border: 1px solid black;height: 95px; ">
         <div style="position: absolute; top: 1%; left: 7%; width: 20px; height: auto;"> <img t-if="o.images.footer_icon_2" t-att-src="image_data_uri(o.images.footer_icon_2)" alt="" style="width: 100%;"/></div>
         <div style="position: absolute; top: 0; left: 0; height: 90px; width: 10px;background-color: #ccc; align-content: center; text-align: center;">
           <div style=" width: 100px; margin-top: 39px; margin-left: -45px; font-size: 5.5px;transform: rotate(-90deg);-ms-transform: rotate(-90deg);-moz-transform: rotate(-90deg);-webkit-transform: rotate(-90deg);-o-transform: rotate(-90deg);">SALDO VENCIDO</div>
