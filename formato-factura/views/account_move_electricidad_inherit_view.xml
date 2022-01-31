@@ -11,9 +11,16 @@
                         <group>
                         
                             <group col="5" colspan="5">
-                                <h3> LINEAS PROXIMAMENTE</h3>
+                                <field 
+                                    name="linea_electricidad"
+                                    mode="tree"
+                                >
+                                    <tree>
+
+                                    </tree>
+                                </field>
                             </group>
-                            <group>
+                            <group col="6" colspan="6">
                                 <group col="6" colspan="6">
                                     <group col="3" colspan="3">
                                         <h4> Consumo</h4>
