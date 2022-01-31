@@ -32,6 +32,7 @@
         'views/account_move_inherit_view.xml',
         'views/account_move_electricidad_inherit_view.xml',
         'views/res_partner_inherit.xml',
+        'views/linea_servicio_view.xml',
         'report/external_layout_background_inherit.xml',
         'report/report_invoice_document.xml',
     ],
