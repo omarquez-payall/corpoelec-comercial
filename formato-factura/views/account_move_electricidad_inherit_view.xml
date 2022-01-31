@@ -10,12 +10,12 @@
                     <page string="Electricidad">
                         <group>
                         
-                            <group col="5" colspan="5">
+                            <group >
                                 <field 
                                     name="linea_electricidad"
                                     mode="tree"
                                 >
-                                    <tree editable="bottom" >
+                                    <tree >
                                         <control>
                                             <create name="add_line_control" string="Add a line"/>
                                         </control>
@@ -30,6 +30,7 @@
                                 <group col="6" colspan="6">
                                     <group col="3" colspan="3">
                                         <h4> Consumo</h4>
+                                        <br></br>
                                         <field name="lectura_actual"/>
                                         <field name="lectura_anterior" /> 
                                         <field name="factor_multiplicador"/>
@@ -39,6 +40,7 @@
                                     </group>
                                     <group col="3" colspan="3">
                                         <h4> Demanda</h4>
+                                        <br></br>
                                         <field name="demanda_asignada"/>
                                         <field name="demanda_leida"/>
                                         <field name="demanda_facturada" />
