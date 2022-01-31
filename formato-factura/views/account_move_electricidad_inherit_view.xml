@@ -10,12 +10,12 @@
                     <page string="Electricidad">
                         <group>
                         
-                            <group>
+                            <group col="5" colspan="5">
                                 <h3> LINEAS PROXIMAMENTE</h3>
                             </group>
                             <group>
-                                <group>
-                                    <group>
+                                <group col="6" colspan="6">
+                                    <group col="3" colspan="3">
                                         <h4> Consumo</h4>
                                         <field name="lectura_actual"/>
                                         <field name="lectura_anterior" /> 
@@ -24,7 +24,7 @@
                                         <field name="kwh_equivalente" />
                                         <field name="monto_total_consumo"/>   
                                     </group>
-                                    <group>
+                                    <group col="3" colspan="3">
                                         <h4> Demanda</h4>
                                         <field name="demanda_asignada"/>
                                         <field name="demanda_leida"/>
