@@ -32,8 +32,7 @@ class LineaServicio( models.Model):
 
     @api.onchange('precio_unidad','cantidad')
     def _onchange_subtotal(self):
-        for record in self:
-            record.subtotal = record.cantidad * record.precio_unidad
+        self.subtotal = self.cantidad * self.precio_unidad
 
     @api.model
     def write(self,vals):
