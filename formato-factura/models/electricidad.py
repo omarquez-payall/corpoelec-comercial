@@ -61,6 +61,7 @@ class Electricidad( models.Model):
                     'subtotal': self.kwh_equivalente * tarifa
                 }
             )
+            self._onchange_subtotal()
 
     @api.onchange('monto_total_demanda')
     def _compute_tarifa_consumo_lines(self):
@@ -80,6 +81,7 @@ class Electricidad( models.Model):
                     'subtotal': demanda_equivalente * tarifa
                 }
             )
+            self._onchange_subtotal()
 
     @api.onchange('linea_electricidad')
     def _onchange_subtotal(self):
