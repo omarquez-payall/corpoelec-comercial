@@ -7,7 +7,22 @@
             <field name="arch" type="xml">
                 <form string="Contract Accounts Form">
                     <sheet>
-                        
+                        <group>
+                            <h1>
+                                <field name="no_cta_contrato"/>
+                            </h1>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="titular"/>
+                                <field name="address_suministro"/>
+                            </group>
+                            <group>
+                                <field name="fecha_creacion"/>
+                                <field name="cnae"/>
+                                <field name="medidor"/>
+                            </group>
+                        </group>
                     </sheet>
                 </form>
             </field>
@@ -18,7 +33,9 @@
             <field name="model">contract.accounts</field>
             <field name="arch" type="xml">
                 <tree string="Contract Accounts List"> 
-                    
+                    <field name="no_cta_contrato"/>
+                    <field name="titular"/>
+                    <field name="fecha_creacion"/>
                 </tree> 
             </field>
         </record>

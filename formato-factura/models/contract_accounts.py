@@ -11,6 +11,7 @@ class ContractAccounts( models.Model):
     medidor = fields.Char(string = 'Identificador de Medidor')
     address_suministro = fields.Text(string = 'Dirección de Suministro')
     titular = fields.Many2one(string = 'Titular', comodel_name = 'res.partner')
+    fecha_creacion = fields.Date(string = 'Fecha de creación')
     
     #@api.model
     #def create(self, vals):
