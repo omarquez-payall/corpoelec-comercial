@@ -16,8 +16,14 @@
                         attrs="{'invisible': ['|', '|', ('state', '!=', 'draft'), ('move_type', '=', 'entry'),('cargar_productos','=',True)]}"
                     />
                 </header>
+                <xpath expr="//field[@name='name']" position="after"> 
+                    <group>
+                        <field name="No_Contable" /> 
+                        <field name="No_Registro" />
+                    </group> 
+                </xpath>
                 <xpath expr="//field[@name='payment_reference']" position="after"> 
-                    <field name="dias_lectura" /> 
+                    <field name="dias_lectura" />  
                 </xpath>
                 <xpath expr="//notebook" position="inside"> 
                     <page string="Saldo Vencido">
@@ -40,6 +46,21 @@
                     </page>
                 </xpath>
             </field>
+        </record>
+
+        <record id="seq_account_move_no_contable" model="ir.sequence">
+            <field name="name">No Contable para la Factura</field>
+            <field name="code">Seq_No_Contable</field>
+            <field name="prefix">CONTABLE</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
+        </record>  
+        <record id="seq_account_move_no_registro" model="ir.sequence">
+            <field name="name">No Registro para la Factura</field>
+            <field name="code">Seq_No_Registro</field>
+            <field name="prefix">REGISTRO</field>
+            <field name="padding">6</field>
+            <field name="company_id" eval="False"/>
         </record>
     </data>
 </odoo>

@@ -6,6 +6,8 @@ class AccountMove( models.Model):
     _inherit = 'account.move'
 
     #------------------- Relacion con los servicios ------------------
+    No_Contable = fields.Char( string = 'No Doc Contable', required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Contable"))
+    No_Registro = fields.Char( string = 'No Doc Contable', required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Registro"))
     
     #------------ Servicio Electrividad ------------------------
     #electricidad_detalle = fields.One2many(
@@ -19,7 +21,19 @@ class AccountMove( models.Model):
     #dias_lectura = fields.Integer( string = "Dias Lectura", required = True)
     #CREAR LINEAS DEL SERVICIO DE ELECTRICIDAD, ASEO Y RELLENO
 
-    
+    @api.model
+    def create(self, vals):
+        vals['No_Contable'] = self.env['ir.sequence'].next_by_code('Seq_No_Contable')
+        vals['No_Registro'] = self.env['ir.sequence'].next_by_code('Seq_No_Registro')
+        result = super(AccountMove, self).create(vals)
+        return result 
+
+    @api.model
+    def _get_next_sequence_number(self, seq_code):
+        sequence = self.env['ir.sequence'].search([('code','=', seq_code)])
+        next= sequence.get_next_char(sequence.number_next_actual)
+        return next
+
     def cargar_productos_electricidad(self):
         for record in self:
             products = self.env['product.product'].search( [['precargar','=',True]])
