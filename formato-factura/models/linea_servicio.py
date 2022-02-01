@@ -8,6 +8,24 @@ class LineaServicio( models.Model):
 
     move_id = fields.Many2one( comodel_name = "account.move", string = "Linea de Servicio")
     nombre_cargo = fields.Char( string = "Cargo")
+    tipo = fields.Selection(
+        string="Tipo",
+        selection=[
+            ('principal','Principal'),
+            ('otro', 'Otro cargo')
+        ],
+        default = 'otro'
+    )
+    clasificacion = fields.Selection(
+        string="Clasificacion de la linea",
+        selection=[
+            ('consumo','Consumo'),
+            ('demanda', 'Demanda'),
+            ('combustible','Combustible'),
+            ('otro', 'Otro cargo')
+        ],
+        default = 'otro'
+    )
     cantidad = fields.Integer( string = "Cantidad")
     precio_unidad = fields.Float( string = "Precio")
     subtotal = fields.Float( string = "Subtotal")

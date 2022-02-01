@@ -21,7 +21,12 @@ class IntegacionPayall( models.Model):
                 "message":"El cliente no existe"
             }
             return result
-        invoices = self.env['account.move'].search([['partner_id.id','=', partner.id], ['move_type','=','out_invoice']])
+        invoices = self.env['account.move'].search([
+            ['partner_id.id','=', partner.id], 
+            ['move_type','=','out_invoice'],
+            ['payment_state','=','not_paid'],
+            ['payment_state','=','not_paid']
+        ])
         if ( invoices is None):
             result = { 
                 "code":"V4",
@@ -29,7 +34,7 @@ class IntegacionPayall( models.Model):
             }
             return result
         amount_due = 0
-        for invoice in range(0, len(invoices)):
+        for invoice in invoices:
             amount_due += invoice.amount_residual
         result = {
             "code":"00",

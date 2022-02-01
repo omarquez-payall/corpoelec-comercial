@@ -20,6 +20,8 @@
                                         <field name="nombre_cargo"/>
                                         <field name="cantidad" /> 
                                         <field name="precio_unidad" />
+                                        <field name="tipo" invisible="1"/>
+                                        <field name="clasificacion" invisible="1"/>
                                         <field name="subtotal" />
                                     </tree>
                                 </field>

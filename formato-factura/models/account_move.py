@@ -51,8 +51,28 @@ class AccountMove( models.Model):
                 record.cargar_productos = True
             record.linea_electricidad.create({
                 'move_id': record.id,
-                'nombre_cargo': 'Facturacion por Consumo',
+                'nombre_cargo': 'FACTURACION POR CONSUMO',
                 'cantidad': 1,
+                'tipo':'principal',
+                'clasificacion':'consumo',
+                'precio_unidad':1,
+                'subtotal':1
+            })
+            record.linea_electricidad.create({
+                'move_id': record.id,
+                'nombre_cargo': 'CARGO POR AJUSTE COMBUSTIBLE Y ENERGIA',
+                'cantidad': 1,
+                'tipo':'otro',
+                'clasificacion':'combustible',
+                'precio_unidad':1,
+                'subtotal':1
+            })
+            record.linea_electricidad.create({
+                'move_id': record.id,
+                'nombre_cargo': 'FACTURACION POR DEMANDA',
+                'cantidad': 1,
+                'tipo':'principal',
+                'clasificacion':'demanda',
                 'precio_unidad':1,
                 'subtotal':1
             })
