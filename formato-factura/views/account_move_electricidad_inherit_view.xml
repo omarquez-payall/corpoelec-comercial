@@ -25,6 +25,7 @@
                                         <field name="subtotal" />
                                     </tree>
                                 </field>
+                                <field name="subtotal_electricidad"/>
                             <group >
                                 
                             </group>
