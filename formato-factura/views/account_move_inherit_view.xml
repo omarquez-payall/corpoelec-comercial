@@ -16,11 +16,16 @@
                         attrs="{'invisible': ['|', '|', ('state', '!=', 'draft'), ('move_type', '=', 'entry'),('cargar_productos','=',True)]}"
                     />
                 </header>
-                <xpath expr="//field[@name='name']" position="after"> 
+                <xpath expr="//field[@name='name']" position="replace"> \
                     <group>
-                        <field name="No_Contable" /> 
-                        <field name="No_Registro" />
-                    </group> 
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="No_Contable" /> 
+                            <field name="No_Registro" />
+                        </group> 
+                    </group>
                 </xpath>
                 <xpath expr="//field[@name='payment_reference']" position="after"> 
                     <field name="dias_lectura" />  
