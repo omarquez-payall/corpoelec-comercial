@@ -12,7 +12,9 @@ class LineaServicio( models.Model):
         string="Tipo",
         selection=[
             ('principal','Principal'),
-            ('otro', 'Otro cargo')
+            ('otro', 'Otro cargo'),
+            ('aseo', 'Aseo'),
+            ('relleno', 'relleno')
         ],
         default = 'otro', store = True
     )
@@ -22,7 +24,9 @@ class LineaServicio( models.Model):
             ('consumo','Consumo'),
             ('demanda', 'Demanda'),
             ('combustible','Combustible'),
-            ('otro', 'Otro cargo')
+            ('otro', 'Otro cargo'),
+            ('aseo', 'Aseo'),
+            ('relleno', 'relleno')
         ],
         default = 'otro'
     )
