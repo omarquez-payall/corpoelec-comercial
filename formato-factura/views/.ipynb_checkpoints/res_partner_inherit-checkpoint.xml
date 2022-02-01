@@ -13,8 +13,7 @@
                 </xpath>
                 <notebook>
                     <page string="Cuentas contrato asociadas" >
-                    </page>
-                    <page string="Saldos vencidos" >
+                        <field name="contract_accounts"/>
                     </page>
                 </notebook>
             </field>
