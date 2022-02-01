@@ -26,7 +26,10 @@
                                     </tree>
                                 </field>
                                 <group col="3" colspan="3" >
-                                    <field name="subtotal_electricidad"/>
+                                    <group></group>
+                                    <group>
+                                        <field name="subtotal_electricidad"/>
+                                    </group>
                                 </group>
                             <group >
                                 

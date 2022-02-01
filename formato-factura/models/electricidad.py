@@ -44,6 +44,7 @@ class Electricidad( models.Model):
             if (record.dias_lectura > 0):
                 record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
                 linea_consumo = self.env['linea.servicio'].search([['move_id','=',record.id],['clasificacion','=','consumo']])
+                record.payment_reference = linea_consumo.nombre_cargo
                 linea_consumo.update({
                     'cantidad': record.kwh_equivalente,
                     'precio_unidad':2
@@ -56,6 +57,10 @@ class Electricidad( models.Model):
         for record in self:
             if record.linea_electricidad is not None:
                 for line in record.linea_electricidad:
+                    record.subtotal_electricidad = 0
                     record.subtotal_electricidad += line["subtotal"]
+
+
+    
 
         
