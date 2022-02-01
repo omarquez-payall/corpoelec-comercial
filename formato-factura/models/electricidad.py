@@ -48,15 +48,16 @@ class Electricidad( models.Model):
                 
             
     
-    @api.onchange('kwh_equivalente')
+    @api.onchange('monto_total_consumo')
     def _compute_tarifa_lines(self):
-        if (self.kwh_equivalente >0):
+        if (self.monto_total_consumo >0):
             linea_consumo = self.linea_electricidad.search([['clasificacion','=','consumo']])
             self.payment_reference = linea_consumo.nombre_cargo
+            tarifa = ( self.monto_total_consumo / self.dias_lectura) * (30 / self.kwh_equivalente)
             linea_consumo.write(
                 {
                     'cantidad': self.kwh_equivalente,
-                    'precio_unidad':2
+                    'precio_unidad':tarifa
                 }
             )
 
