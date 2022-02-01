@@ -43,12 +43,14 @@ class Electricidad( models.Model):
             record.cantidad_medida = ( record.lectura_actual - record.lectura_anterior) * record.factor_multiplicador
             if (record.dias_lectura > 0):
                 record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
-                linea_consumo = self.env['linea.servicio'].search([['move_id','=',record.id],['clasificacion','=','consumo']])
-                record.payment_reference = linea_consumo.nombre_cargo
-                linea_consumo.update({
-                    'cantidad': record.kwh_equivalente,
-                    'precio_unidad':2
-                })
+                linea_consumo = record.linea_electricidad.search([['clasificacion','=','consumo']])
+                record.payment_reference = len( record.linea_electricidad)
+                linea_consumo.update(
+                    (1, linea_consumo.id, {
+                        'cantidad': record.kwh_equivalente,
+                        'precio_unidad':2
+                    })
+                )
             
     
 
