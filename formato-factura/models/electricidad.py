@@ -56,8 +56,8 @@ class Electricidad( models.Model):
     def _onchange_subtotal(self):
         for record in self:
             if record.linea_electricidad is not None:
+                record.subtotal_electricidad = 0
                 for line in record.linea_electricidad:
-                    record.subtotal_electricidad = 0
                     record.subtotal_electricidad += line["subtotal"]
 
 
