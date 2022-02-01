@@ -19,6 +19,9 @@ class Electricidad( models.Model):
         
         states={'draft': [('readonly', False)]})
     
+    cuenta_contrato = fields.One2many( 
+        string="No Cuenta Contrato"
+    )
     subtotal_electricidad = fields.Float( string="Subtotal Electricidad", store=True)
     #-------------- SECCION DE CONSUMO ----------------------------
     lectura_actual = fields.Integer( string = "Lectura Actual", store=True)

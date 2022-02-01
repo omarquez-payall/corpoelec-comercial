@@ -19,12 +19,13 @@
                 <div class="oe_title" position="inside">
                     <group>
                         <group>
-                            <field name="No_Contable" /> 
-                            <field name="No_Registro" />
+                            <field name="No_Contable" readonly="1"/> 
+                            <field name="No_Registro" readonly="1"/>
                         </group> 
                     </group>
                 </div>
                 <xpath expr="//field[@name='payment_reference']" position="after"> 
+                    <field name="cuenta_contrato" />  
                     <field name="dias_lectura" />  
                 </xpath>
                 <xpath expr="//notebook" position="inside"> 
