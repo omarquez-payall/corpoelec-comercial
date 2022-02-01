@@ -49,3 +49,10 @@ class AccountMove( models.Model):
                     'move_id': record.id
                 })
                 record.cargar_productos = True
+            record.linea_electricidad.create({
+                'move_id': record.id,
+                'nombre_cargo': 'Facturacion por Consumo',
+                'cantidad': 1,
+                'precio_unidad':1,
+                'subtotal':1
+            })
