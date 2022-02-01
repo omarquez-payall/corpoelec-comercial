@@ -6,6 +6,12 @@ class ContractAccounts( models.Model):
     _name = 'contract.accounts'
     _description = 'This model is to load Corpoelect customers contract accounts'
     
+    no_cta_contrato = fields.Char(string = 'Cuenta Contrato')
+    cnae = fields.Char(string = 'CNAE')
+    medidor = fields.Char(string = 'Identificador de Medidor')
+    address_suministro = fields.Text(string = 'Dirección de Suministro')
+    titular = fields.Many2one(string = 'Titular', comodel_name = 'res.partner')
+    
     #@api.model
     #def create(self, vals):
     #    vals['partner_code'] = self.env['ir.sequence'].next_by_code('partner_code_seq')
