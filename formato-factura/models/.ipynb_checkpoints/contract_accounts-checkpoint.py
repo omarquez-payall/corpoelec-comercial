@@ -12,7 +12,7 @@ class ContractAccounts( models.Model):
     medidor = fields.Char(string = 'Identificador de Medidor')
     address_suministro = fields.Text(string = 'Dirección de Suministro')
     titular = fields.Many2one(string = 'Titular', comodel_name = 'res.partner')
-    tarifa = fields.Float(string = 'Tarifa')
+    tarifa = fields.Float(string = 'Demanda asignada')
     fecha_creacion = fields.Date(string = 'Fecha de creación')
     
     @api.model

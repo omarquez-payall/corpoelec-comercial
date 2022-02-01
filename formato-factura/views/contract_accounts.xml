@@ -35,8 +35,8 @@
             <field name="arch" type="xml">
                 <tree string="Contract Accounts List"> 
                     <field name="no_cta_contrato"/>
-                    <field name="titular"/>
-                    <field name="fecha_creacion"/>
+                    <field name="medidor"/>
+                    <field name="tarifa"/>
                 </tree> 
             </field>
         </record>
