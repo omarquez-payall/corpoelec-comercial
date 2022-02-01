@@ -28,7 +28,7 @@
                     
                     <field name="dias_lectura" />  
                 </xpath>
-                <xpath expr="//field[@name='date']" position="after"> 
+                <xpath expr="//field[@name='invoice_date']" position="after"> 
                     <h4>Periodo de Facturacion</h4>
                     <field name="inicio_periodo" />  
                     <p>hasta</p>
