@@ -34,3 +34,9 @@ class LineaServicio( models.Model):
     def _onchange_subtotal(self):
         for record in self:
             record.subtotal = record.cantidad * record.precio_unidad
+
+    @api.model
+    def write(self,vals):
+        self._onchange_subtotal()
+        rec = super(LineaServicio, self).write(vals)
+        return rec

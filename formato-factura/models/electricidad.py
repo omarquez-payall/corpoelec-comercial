@@ -43,16 +43,22 @@ class Electricidad( models.Model):
             record.cantidad_medida = ( record.lectura_actual - record.lectura_anterior) * record.factor_multiplicador
             if (record.dias_lectura > 0):
                 record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
-                linea_consumo = record.linea_electricidad.search([['clasificacion','=','consumo']])
-                record.payment_reference = len( record.linea_electricidad)
-                linea_consumo.update(
-                    (1, linea_consumo.id, {
-                        'cantidad': record.kwh_equivalente,
-                        'precio_unidad':2
-                    })
-                )
+                record._compute_tarifa_lines()
+                record._onchange_subtotal()
+                
             
     
+    @api.onchange('kwh_equivalente')
+    def _compute_tarifa_lines(self):
+        if (self.kwh_equivalente >0):
+            linea_consumo = self.linea_electricidad.search([['clasificacion','=','consumo']])
+            self.payment_reference = linea_consumo.nombre_cargo
+            linea_consumo.write(
+                {
+                    'cantidad': self.kwh_equivalente,
+                    'precio_unidad':2
+                }
+            )
 
     @api.onchange('linea_electricidad')
     def _onchange_subtotal(self):
