@@ -49,7 +49,7 @@ class Electricidad( models.Model):
             
     
     @api.onchange('monto_total_consumo')
-    def _compute_tarifa_lines(self):
+    def _compute_tarifa_consumo_lines(self):
         if (self.monto_total_consumo >0):
             linea_consumo = self.linea_electricidad.search([['clasificacion','=','consumo']])
             self.payment_reference = linea_consumo.nombre_cargo
@@ -59,6 +59,25 @@ class Electricidad( models.Model):
                     'cantidad': self.kwh_equivalente,
                     'precio_unidad':tarifa,
                     'subtotal': self.kwh_equivalente * tarifa
+                }
+            )
+
+    @api.onchange('monto_total_demanda')
+    def _compute_tarifa_consumo_lines(self):
+        if (self.monto_total_demanda >0):
+            demanda_equivalente = 0
+            if ( self.demanda_asignada > self.demanda_facturada):
+                demanda_equivalente = self.demanda_asignada
+            else:
+                demanda_equivalente = self.demanda_facturada
+            linea_consumo = self.linea_electricidad.search([['clasificacion','=','demanda']])
+            self.payment_reference = linea_consumo.nombre_cargo
+            tarifa = ( self.monto_total_demanda / self.dias_lectura) * (30 / demanda_equivalente)
+            linea_consumo.write(
+                {
+                    'cantidad': demanda_equivalente,
+                    'precio_unidad':tarifa,
+                    'subtotal': demanda_equivalente * tarifa
                 }
             )
 
