@@ -9,6 +9,8 @@ class AccountMove( models.Model):
     No_Contable = fields.Char( string = 'No Doc Contable', required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Contable"))
     No_Registro = fields.Char( string = 'No Registro', required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Registro"))
     
+    inicio_periodo = fields.Date(string='Inicio período', default=fields.Date.today, store=True)
+    fin_periodo = fields.Date(string='Fin período', default=fields.Date.today, store=True)
     #------------ Servicio Electrividad ------------------------
     #electricidad_detalle = fields.One2many(
     #    comodel_name = "servicio.electricidad", 
