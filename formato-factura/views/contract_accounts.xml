@@ -9,7 +9,7 @@
                     <sheet>
                         <group>
                             <h1>
-                                <field name="no_cta_contrato"/>
+                                <field name="no_cta_contrato" placeholder="Número de Cuenta Contrato"/>
                             </h1>
                         </group>
                         <group>
