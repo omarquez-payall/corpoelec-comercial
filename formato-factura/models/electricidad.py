@@ -44,7 +44,7 @@ class Electricidad( models.Model):
             if (record.dias_lectura > 0):
                 record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
                 record._compute_tarifa_lines()
-                record._onchange_subtotal()
+
                 
             
     
