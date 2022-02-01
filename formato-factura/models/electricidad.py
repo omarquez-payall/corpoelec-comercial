@@ -57,7 +57,8 @@ class Electricidad( models.Model):
             linea_consumo.write(
                 {
                     'cantidad': self.kwh_equivalente,
-                    'precio_unidad':tarifa
+                    'precio_unidad':tarifa,
+                    'subtotal': self.kwh_equivalente * tarifa
                 }
             )
 

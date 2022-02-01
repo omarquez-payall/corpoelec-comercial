@@ -36,6 +36,6 @@ class LineaServicio( models.Model):
 
     @api.model
     def write(self,vals):
-        self._onchange_subtotal()
+        #self._onchange_subtotal()
         rec = super(LineaServicio, self).write(vals)
         return rec
