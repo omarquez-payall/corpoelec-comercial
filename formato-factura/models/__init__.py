@@ -8,3 +8,4 @@ from . import account_move
 from . import electricidad
 from . import product
 from . import linea_servicio
+from . import contract_accounts
