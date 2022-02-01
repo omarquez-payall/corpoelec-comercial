@@ -16,7 +16,7 @@
                         attrs="{'invisible': ['|', '|', ('state', '!=', 'draft'), ('move_type', '=', 'entry'),('cargar_productos','=',True)]}"
                     />
                 </header>
-                <xpath expr="//div[@class='oe_title']" position="after"> \
+                <xpath expr="//div[#class='oe_title']" position="after"> \
                     <group>
                         <group>
                             <field name="No_Contable" /> 
@@ -33,17 +33,6 @@
                             <group>
                                 <field name="saldo_vencido"/>
                             </group>
-                            
-                            <group>
-                                <h4> Prueba Grupo 1</h4>
-                                
-                            </group>
-                            <group>
-                                <h4> Prueba Grupo 2</h4>
-                                
-                                
-                            </group>
-                            
                         </group>
                     </page>
                 </xpath>
