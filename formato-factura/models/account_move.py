@@ -7,7 +7,7 @@ class AccountMove( models.Model):
 
     #------------------- Relacion con los servicios ------------------
     No_Contable = fields.Char( string = 'No Doc Contable', required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Contable"))
-    No_Registro = fields.Char( string = 'No Doc Contable', required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Registro"))
+    No_Registro = fields.Char( string = 'No Registro', required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Registro"))
     
     #------------ Servicio Electrividad ------------------------
     #electricidad_detalle = fields.One2many(
