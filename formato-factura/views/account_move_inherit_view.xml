@@ -16,11 +16,8 @@
                         attrs="{'invisible': ['|', '|', ('state', '!=', 'draft'), ('move_type', '=', 'entry'),('cargar_productos','=',True)]}"
                     />
                 </header>
-                <xpath expr="//field[@name='name']" position="replace"> \
+                <xpath expr="//div[@class='oe_title']" position="after"> \
                     <group>
-                        <group>
-                            <field name="name"/>
-                        </group>
                         <group>
                             <field name="No_Contable" /> 
                             <field name="No_Registro" />
