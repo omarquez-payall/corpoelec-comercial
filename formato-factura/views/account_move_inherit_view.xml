@@ -28,12 +28,11 @@
                     
                     <field name="dias_lectura" />  
                 </xpath>
-                <xpath expr="//field[@name='invoice_payment_term_id']" position="before"> 
+                <xpath expr="//field[@name='date']" position="after"> 
                     <h4>Periodo de Facturacion</h4>
                     <field name="inicio_periodo" />  
                     <p>hasta</p>
-                    <field name="fin_periodo" />  
-                    <br></br>
+                    <field name="fin_periodo" />
                 </xpath>
                 <xpath expr="//notebook" position="inside"> 
                     <page string="Saldo Vencido">
