@@ -36,7 +36,7 @@ class IntegacionPayall( models.Model):
             return result
         if ( res_partner_code is None or len(res_partner_code) != 13):
             result = { 
-                "code":"I7",
+                "code":"C7",
                 "message":"Identificador del cliente no fue recibido correctamente por el servidor"
             }
             return result

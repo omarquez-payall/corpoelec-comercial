@@ -9,7 +9,7 @@
                 <xpath expr="//notebook" position="inside"> 
                     <page string="Electricidad">
                         <group>
-                            <field 
+                                <field 
                                     name="linea_electricidad"
                                     mode="tree"
                                 >
@@ -25,7 +25,9 @@
                                         <field name="subtotal" />
                                     </tree>
                                 </field>
-                                <field name="subtotal_electricidad"/>
+                                <group class="oe_subtotal_footer oe_right">
+                                    <field name="subtotal_electricidad"/>
+                                </group>
                             <group >
                                 
                             </group>
