@@ -6,8 +6,8 @@ class AccountMove( models.Model):
     _inherit = 'account.move'
 
     #------------------- Relacion con los servicios ------------------
-    No_Contable = fields.Char( string = 'No Doc Contable', required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Contable"))
-    No_Registro = fields.Char( string = 'No Registro', required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Registro"))
+    No_Contable = fields.Char( string = 'No Doc Contable',readonly=True, required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Contable"))
+    No_Registro = fields.Char( string = 'No Registro',readonly=True, required = True, index=True, default=lambda self: self._get_next_sequence_number("Seq_No_Registro"))
     
     inicio_periodo = fields.Date(string='Inicio período', default=fields.Date.today, store=True)
     fin_periodo = fields.Date(string='Fin período', default=fields.Date.today, store=True)

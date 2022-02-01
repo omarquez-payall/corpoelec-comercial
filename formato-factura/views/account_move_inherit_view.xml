@@ -19,8 +19,8 @@
                 <div class="oe_title" position="inside">
                     <group>
                         <group>
-                            <field name="No_Contable" readonly="1"/> 
-                            <field name="No_Registro" readonly="1"/>
+                            <field name="No_Contable" /> 
+                            <field name="No_Registro" />
                         </group> 
                     </group>
                 </div>
