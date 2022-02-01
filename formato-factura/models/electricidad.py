@@ -48,8 +48,7 @@ class Electricidad( models.Model):
                     'cantidad': record.kwh_equivalente,
                     'precio_unidad':2
                 })
-            else:
-                raise exceptions.UserError('Por favor ingrese los dias de lectura correctamente')
+            
     
 
     @api.onchange('linea_electricidad')
