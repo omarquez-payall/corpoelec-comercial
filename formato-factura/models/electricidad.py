@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import models, fields, api, exceptions
 
 class Electricidad( models.Model):
     _inherit = 'account.move'
@@ -43,6 +43,13 @@ class Electricidad( models.Model):
             record.cantidad_medida = ( record.lectura_actual - record.lectura_anterior) * record.factor_multiplicador
             if (record.dias_lectura > 0):
                 record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
+                linea_consumo = self.env['linea.servicio'].search([['move_id','=',record.id],['clasificacion','=','consumo']])
+                linea_consumo.update({
+                    'cantidad': record.kwh_equivalente,
+                    'precio_unidad':2
+                })
+            else:
+                raise exceptions.UserError('Por favor ingrese los dias de lectura correctamente')
     
 
     @api.onchange('linea_electricidad')
@@ -51,4 +58,5 @@ class Electricidad( models.Model):
             if record.linea_electricidad is not None:
                 for line in record.linea_electricidad:
                     record.subtotal_electricidad += line["subtotal"]
+
         

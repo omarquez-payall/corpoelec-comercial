@@ -28,6 +28,9 @@ class LineaServicio( models.Model):
     )
     cantidad = fields.Integer( string = "Cantidad")
     precio_unidad = fields.Float( string = "Precio")
-    subtotal = fields.Float( string = "Subtotal")
+    subtotal = fields.Float( string = "Subtotal", readonly=True)
 
-    
+    @api.onchange('precio_unidad')
+    def _onchange_subtotal(self):
+        for record in self:
+            record.subtotal = record.cantidad * record.precio_unidad
