@@ -9,7 +9,7 @@
                 <xpath expr="//notebook" position="inside"> 
                     <page string="Relleno Sanitario">
                         <group>
-                                <field 
+                                <!-- <field 
                                     name="linea_servicio_relleno"
                                     mode="tree"
                                 >
@@ -24,7 +24,7 @@
                                         <field name="clasificacion" invisible="1"/>
                                         <field name="subtotal" />
                                     </tree>
-                                </field>
+                                </field> -->
                                 <group col="3" colspan="3" >
                                     <group></group>
                                     <group>
@@ -41,7 +41,7 @@
                     </page>
                      <page string="Aseo">
                         <group>
-                                <field 
+                                <!-- <field 
                                     name="linea_servicio_aseo"
                                     mode="tree"
                                 >
@@ -56,7 +56,7 @@
                                         <field name="clasificacion" invisible="1"/>
                                         <field name="subtotal" />
                                     </tree>
-                                </field>
+                                </field> -->
                                 <group col="3" colspan="3" >
                                     <group></group>
                                     <group>
