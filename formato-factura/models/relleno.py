@@ -22,5 +22,5 @@ class Relleno( models.Model):
     """ cuenta_contrato = fields.One2many( 
         string="No Cuenta Contrato"
     ) """
-    subtotal_relleno = fields.Float( string="Subtotal Aseo", store=True)
+    subtotal_relleno = fields.Float( string="Subtotal Relleno", store=True)
     #-------------- SECCION DE CONSUMO ---------------------------
