@@ -93,7 +93,7 @@ class Electricidad( models.Model):
                     record.subtotal_electricidad += line["subtotal"]
 
                 for invoice_line in record.invoice_line_ids:
-                    if invoice_line.product_id.clasificacion is 'electricidad':
+                    if invoice_line.product_id.clasificacion == 'electricidad':
                         invoice_line.write( {
                             'price_unit': record.subtotal_electricidad
                         })
