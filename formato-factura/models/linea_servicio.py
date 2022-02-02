@@ -43,5 +43,5 @@ class LineaServicio( models.Model):
     @api.model
     def write(self,vals):
         rec = super(LineaServicio, self).write(vals)
-        rec.subtotal = rec.cantidad * rec.precio_unidad
+        self.subtotal = self.cantidad * self.precio_unidad
         return rec
