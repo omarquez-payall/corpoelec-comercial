@@ -42,7 +42,8 @@ class Electricidad( models.Model):
                 linea_combustible = self.linea_electricidad.search([['clasificacion','=','combustible']])
                 linea_combustible.write(
                     {
-                        'cantidad': record.cantidad_medida
+                        'cantidad': record.cantidad_medida,
+                        'subtotal': record.cantidad_medida * linea_combustible.precio
                     }
                 )
                 if (record.dias_lectura > 0):
