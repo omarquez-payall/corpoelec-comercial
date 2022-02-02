@@ -13,7 +13,8 @@ class AccountMove( models.Model):
         string="No Cuenta Contrato",
         comodel_name = "contract.accounts",
         store=True,
-        inverse_name = "move_id"
+        inverse_name = "move_id",
+        domain = lambda self: [(partner_id.id, '=', cuenta_contrato.titular.id)]
     )
     
     inicio_periodo = fields.Date(string='Inicio período', default=fields.Date.today, store=True)
