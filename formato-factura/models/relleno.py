@@ -13,11 +13,11 @@ class Relleno( models.Model):
     #    comodel_name = "account.move"
     #)
     #dias_lectura = fields.Integer( string ="Dias Lectura", related ="factura_id.dias_lectura")
-    linea_servicio_relleno = fields.One2many(
+    """ linea_servicio_relleno = fields.One2many(
         comodel_name="linea.servicio", 
         inverse_name="move_relleno_id",
         
-        states={'draft': [('readonly', False)]})
+        states={'draft': [('readonly', False)]}) """
     
     """ cuenta_contrato = fields.One2many( 
         string="No Cuenta Contrato"
