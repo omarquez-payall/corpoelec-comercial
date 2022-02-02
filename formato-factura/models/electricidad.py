@@ -43,7 +43,7 @@ class Electricidad( models.Model):
                 linea_combustible.write(
                     {
                         'cantidad': record.cantidad_medida,
-                        'subtotal': record.cantidad_medida * linea_combustible.precio
+                        'subtotal': record.cantidad_medida * linea_combustible.precio_unidad
                     }
                 )
                 if (record.dias_lectura > 0):
