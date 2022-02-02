@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from typing import Tuple
 from odoo import models, fields, api, exceptions
 
 class Electricidad( models.Model):
@@ -16,14 +17,8 @@ class Electricidad( models.Model):
     linea_electricidad = fields.One2many(
         comodel_name="linea.servicio", 
         inverse_name="move_id",
-        
         states={'draft': [('readonly', False)]})
     
-    cuenta_contrato = fields.One2many( 
-        string="No Cuenta Contrato",
-        comodel_name = "contract.accounts",
-        inverse_name = "move_id"
-    )
     subtotal_electricidad = fields.Float( string="Subtotal Electricidad", store=True)
     #-------------- SECCION DE CONSUMO ----------------------------
     lectura_actual = fields.Integer( string = "Lectura Actual", store=True)
