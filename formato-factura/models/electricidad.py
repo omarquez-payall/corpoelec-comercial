@@ -22,8 +22,7 @@ class Electricidad( models.Model):
     cuenta_contrato = fields.One2many( 
         string="No Cuenta Contrato",
         comodel_name = "contract.accounts",
-        inverse_name = "move_id",
-        domain = "[(partner_id.id,'=',cuenta_contrato.titular.id)]"
+        inverse_name = "move_id"
     )
     subtotal_electricidad = fields.Float( string="Subtotal Electricidad", store=True)
     #-------------- SECCION DE CONSUMO ----------------------------
@@ -48,13 +47,7 @@ class Electricidad( models.Model):
                 record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
                 self._compute_tarifa_consumo_lines()
 
-                
-            
-    
-    @api.onchange('monto_total_consumo')
-    def _compute_tarifa_consumo_lines(self):
-        if (self.monto_total_consumo >0):
-            linea_consumo = self.linea_electricidad.search([['clasificacion','=','consumo']])
+                 no_cta_contrato = fields.Char(string = 'Cuenta Contrato')dad.search([['clasificacion','=','consumo']])
             self.payment_reference = linea_consumo.nombre_cargo
             tarifa = ( self.monto_total_consumo / self.dias_lectura) * (30 / self.kwh_equivalente)
             linea_consumo.write(
