@@ -15,7 +15,7 @@ class Aseo( models.Model):
     #dias_lectura = fields.Integer( string ="Dias Lectura", related ="factura_id.dias_lectura")
     linea_servicio_aseo = fields.One2many(
         comodel_name="linea.servicio", 
-        inverse_name="move_id",
+        inverse_name="move_aseo_id",
         
         states={'draft': [('readonly', False)]})
     

@@ -6,7 +6,9 @@ class LineaServicio( models.Model):
     _name = 'linea.servicio'
     _description = 'Modelo para la linea de los servicios'
 
-    move_id = fields.Many2one( comodel_name = "account.move", string = "Linea de Servicio")
+    move_id = fields.Many2one( comodel_name = "account.move", string = "Linea de Energia")
+    move_aseo_id = fields.Many2one( comodel_name = "account.move", string = "Linea de Aseo")
+    move_relleno_id = fields.Many2one( comodel_name = "account.move", string = "Linea de Relleno")
     nombre_cargo = fields.Char( string = "Cargo", store = True)
     tipo = fields.Selection(
         string="Tipo",
