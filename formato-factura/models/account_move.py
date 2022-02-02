@@ -9,6 +9,13 @@ class AccountMove( models.Model):
     No_Contable = fields.Char( string = 'No Doc Contable',readonly=True, required = True, index=True, default=lambda self: self._get_next_sequence_number_contable())
     No_Registro = fields.Char( string = 'No Registro',readonly=True, required = True, index=True, default=lambda self: self._get_next_sequence_number_registro())
     
+    cuenta_contrato = fields.One2many( 
+        string="No Cuenta Contrato",
+        comodel_name = "contract.accounts",
+        store=True,
+        inverse_name = "move_id"
+    )
+    
     inicio_periodo = fields.Date(string='Inicio período', default=fields.Date.today, store=True)
     fin_periodo = fields.Date(string='Fin período', default=fields.Date.today, store=True)
     #------------ Servicio Electrividad ------------------------
@@ -16,7 +23,7 @@ class AccountMove( models.Model):
     #    comodel_name = "servicio.electricidad", 
     #    inverse_name = "factura_id")
 
-    dias_lectura = fields.Integer( string = "Dias Lectura")
+    dias_lectura = fields.Integer( string = "Dias Lectura", store = True)
     cargar_productos = fields.Boolean( string="Cargar", default = False)
     saldo_vencido = fields.Float( string="Saldo Vencido", default = 0.0)
     # COMO DEBE ESTAR EN PRODUCCION
@@ -41,6 +48,12 @@ class AccountMove( models.Model):
         sequence = self.env['ir.sequence'].search([('code','=', 'Seq_No_Registro')])
         next = sequence.get_next_char(sequence.number_next_actual)
         return next
+
+    @api.onchange('partner_id')
+    def _filtrar_cuentas_contrato(self):
+        for record in self:
+            cuentas_contratos = self.env['contract.accounts'].search([(record.partner_id.id,'=','titular.id')])
+            record.cuenta_contrato = cuentas_contratos
 
     def cargar_productos_electricidad(self):
         for record in self:
