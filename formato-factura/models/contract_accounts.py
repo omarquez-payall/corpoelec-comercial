@@ -8,16 +8,16 @@ class ContractAccounts( models.Model):
     
     cod = fields.Char(string = 'Codigo de cta')
     no_cta_contrato = fields.Char(string = 'Cuenta Contrato')
-    move_id = fields.Many2one( 
-        comodel_name = "account.move", 
-        string = "Factura asociada",
-        domain = "['|',(parent.partner_id.id,'=',titular.id)]")
     cnae = fields.Char(string = 'CNAE')
     medidor = fields.Char(string = 'Identificador de Medidor')
     address_suministro = fields.Text(string = 'Dirección de Suministro')
     titular = fields.Many2one(string = 'Titular', comodel_name = 'res.partner')
     tarifa = fields.Float(string = 'Demanda asignada')
     fecha_creacion = fields.Date(string = 'Fecha de creación')
+    move_id = fields.Many2one( 
+        comodel_name = "account.move", 
+        string = "Factura asociada",
+        domain = "['|',(parent.partner_id.id,'=',titular.id)]")
     
     @api.model
     def create(self, vals):
