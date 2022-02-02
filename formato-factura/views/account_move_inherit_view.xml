@@ -27,7 +27,7 @@
                 <xpath expr="//field[@name='payment_reference']" position="after"> 
                     <field 
                         name="cuenta_contrato"
-                        domain = "['|',((partner_id.id,'=',cuenta_contrato.titular.id))]"
+                        domain = "['|',(('partner_id.id','=','cuenta_contrato.titular.id'))]"
                     />
                     <field name="dias_lectura" />  
                 </xpath>
