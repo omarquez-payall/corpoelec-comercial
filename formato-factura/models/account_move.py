@@ -52,8 +52,9 @@ class AccountMove( models.Model):
     @api.onchange('partner_id')
     def _filtrar_cuentas_contrato(self):
         for record in self:
-            cuentas_contratos = self.env['contract.accounts'].search([(record.partner_id.id,'=','titular.id')])
-            record.cuenta_contrato = cuentas_contratos
+            if record.partner_id:
+                cuentas_contratos = self.env['contract.accounts'].search([(record.partner_id.id,'=','titular.id')])
+                record.cuenta_contrato = cuentas_contratos
 
     def cargar_productos_electricidad(self):
         for record in self:
