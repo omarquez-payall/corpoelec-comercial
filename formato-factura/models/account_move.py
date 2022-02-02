@@ -13,8 +13,7 @@ class AccountMove( models.Model):
         string="No Cuenta Contrato",
         comodel_name = "contract.accounts",
         store=True,
-        inverse_name = "move_id",
-        domain = lambda self: [(partner_id.id, '=', cuenta_contrato.titular.id)]
+        inverse_name = "move_id"
     )
     
     inicio_periodo = fields.Date(string='Inicio período', default=fields.Date.today, store=True)
@@ -54,8 +53,7 @@ class AccountMove( models.Model):
     def _filtrar_cuentas_contrato(self):
         for record in self:
             if record.partner_id:
-                cuentas_contratos = self.env['contract.accounts'].search([(record.partner_id.id,'=','titular.id')])
-                record.cuenta_contrato = cuentas_contratos
+                return { 'domain': { 'cuenta_contrato': [('titular.id','=',record.partner_id.id)]}}
 
     def cargar_productos_electricidad(self):
         for record in self:
