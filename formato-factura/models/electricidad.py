@@ -23,7 +23,7 @@ class Electricidad( models.Model):
         string="No Cuenta Contrato",
         comodel_name = "contract.accounts",
         inverse_name = "move_id",
-        domain = "[('partner_id.id','=','cuenta_contrato.titular.id')]"
+        domain = "[(partner_id.id,'=',cuenta_contrato.titular.id)]"
     )
     subtotal_electricidad = fields.Float( string="Subtotal Electricidad", store=True)
     #-------------- SECCION DE CONSUMO ----------------------------
