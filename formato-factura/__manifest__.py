@@ -31,6 +31,7 @@
         'views/invoice_images_inherit.xml',
         'views/account_move_inherit_view.xml',
         'views/account_move_electricidad_inherit_view.xml',
+        'views/otros_servicios_account_move_inherit_view.xml',
         'views/res_partner_inherit.xml',
         'views/linea_servicio_view.xml',
         'views/contract_accounts.xml',
