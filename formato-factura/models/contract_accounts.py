@@ -16,8 +16,7 @@ class ContractAccounts( models.Model):
     fecha_creacion = fields.Date(string = 'Fecha de creación')
     move_id = fields.Many2one( 
         comodel_name = "account.move", 
-        string = "Factura asociada",
-        domain = "['|',(parent.partner_id.id,'=',titular.id)]")
+        string = "Factura asociada")
     
     @api.model
     def create(self, vals):
