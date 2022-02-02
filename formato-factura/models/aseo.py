@@ -19,8 +19,9 @@ class Aseo( models.Model):
         
         states={'draft': [('readonly', False)]}) """
     
-    """ cuenta_contrato = fields.One2many( 
-        string="No Cuenta Contrato"
-    ) """
+    cuenta_contrato = fields.Many2one( 
+        string="No Cuenta Contrato",
+        comodel_name = "contract.accounts"
+    )
     subtotal_aseo = fields.Float( string="Subtotal Aseo", store=True)
     #-------------- SECCION DE CONSUMO ---------------------------
