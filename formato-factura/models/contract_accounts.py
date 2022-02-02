@@ -19,7 +19,11 @@ class ContractAccounts( models.Model):
     @api.onchange('name')
     def update_partner(self):
         for record in self:
+            partner = []
             partner_object = self.env['res.partner'].search([('name','=', record.name)])
+            for object in partner_object:
+                partner.append({'id':object.id})
+            self.titular = partner
     
     @api.model
     def create(self, vals):
