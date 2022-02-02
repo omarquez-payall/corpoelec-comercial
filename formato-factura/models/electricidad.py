@@ -38,14 +38,15 @@ class Electricidad( models.Model):
     def _compute_cantidad_medida( self):
         for record in self:
             record.cantidad_medida = ( record.lectura_actual - record.lectura_anterior) * record.factor_multiplicador
-            if (record.dias_lectura > 0):
-                record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
             linea_combustible = self.linea_electricidad.search([['clasificacion','=','combustible']])
             linea_combustible.write(
                 {
                     'cantidad': record.cantidad_medida
                 }
             )
+            if (record.dias_lectura > 0):
+                record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
+            
 
     @api.onchange('monto_total_consumo')
     def _compute_tarifa_consumo_lines(self):
