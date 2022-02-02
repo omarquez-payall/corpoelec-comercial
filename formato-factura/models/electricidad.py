@@ -48,6 +48,7 @@ class Electricidad( models.Model):
                 )
                 if (record.dias_lectura > 0):
                     record.kwh_equivalente = (record.cantidad_medida * 30) / record.dias_lectura
+                    self._compute_tarifa_consumo_lines()
             
 
     @api.onchange('monto_total_consumo')
@@ -66,7 +67,7 @@ class Electricidad( models.Model):
             self._onchange_subtotal()
 
     @api.onchange('monto_total_demanda')
-    def _compute_tarifa_consumo_lines(self):
+    def _compute_tarifa_demanda_lines(self):
         if (self.monto_total_demanda >0):
             demanda_equivalente = 0
             if ( self.demanda_asignada > self.demanda_facturada):
