@@ -8,6 +8,7 @@ class ContractAccounts( models.Model):
     
     cod = fields.Char(string = 'Codigo de cta')
     no_cta_contrato = fields.Char(string = 'Cuenta Contrato')
+    move_id = fields.Many2one( comodel_name = "account.move", string = "Factura asociada")
     cnae = fields.Char(string = 'CNAE')
     medidor = fields.Char(string = 'Identificador de Medidor')
     address_suministro = fields.Text(string = 'Dirección de Suministro')
