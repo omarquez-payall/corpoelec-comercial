@@ -9,4 +9,14 @@ class Product( models.Model):
 
     
     precargar = fields.Boolean( string = "Precargar", default = False)
+    clasificacion = fields.Selection(
+        string="Clasificacion de la linea",
+        selection=[
+            ('electricidad','Electricidad'),
+            ('aseo', 'Aseo'),
+            ('relleno', 'relleno'),
+            ('otro', 'Otro cargo')
+        ],
+        default = 'otro'
+    )
     

@@ -26,13 +26,13 @@ class Electricidad( models.Model):
     factor_multiplicador = fields.Integer( string = "Factor Multiplicador", store=True)
     cantidad_medida = fields.Integer( string = "Cantidad Medida")
     kwh_equivalente = fields.Float( string = "kwh Equivalente")
-    monto_total_consumo = fields.Integer( string = "Monto total consumo", store=True)
+    monto_total_consumo = fields.Float( string = "Monto total consumo", store=True)
 
     #-------------- SECCION DE DEMANDA ---------------------------
     demanda_asignada = fields.Integer( string = "Demanda asignada", store=True)
     demanda_leida = fields.Integer( string = "Demanda Leida", store=True)
     demanda_facturada = fields.Integer( string = "Demanda Facturada", store=True)
-    monto_total_demanda = fields.Integer( string = "Monto total demanda", store=True)
+    monto_total_demanda = fields.Float( string = "Monto total demanda", store=True)
 
     @api.onchange('lectura_actual','lectura_anterior','factor_multiplicador','dias_lectura')
     def _compute_cantidad_medida( self):
@@ -55,7 +55,6 @@ class Electricidad( models.Model):
     def _compute_tarifa_consumo_lines(self):
         if ( self.monto_total_consumo >0):
             linea_consumo = self.linea_electricidad.search([['clasificacion','=','consumo']])
-            self.payment_reference = "linea_consumo.nombre_cargo"
             tarifa = ( self.monto_total_consumo / self.dias_lectura) * (30 / self.kwh_equivalente)
             linea_consumo.write(
                 {
@@ -75,7 +74,6 @@ class Electricidad( models.Model):
             else:
                 demanda_equivalente = self.demanda_facturada
             linea_consumo = self.linea_electricidad.search([['clasificacion','=','demanda']])
-            self.payment_reference = linea_consumo.nombre_cargo
             tarifa = ( self.monto_total_demanda / self.dias_lectura) * (30 / demanda_equivalente)
             linea_consumo.write(
                 {
@@ -93,3 +91,9 @@ class Electricidad( models.Model):
                 record.subtotal_electricidad = 0
                 for line in record.linea_electricidad:
                     record.subtotal_electricidad += line["subtotal"]
+
+                for invoice_line in record.invoice_line_ids:
+                    if invoice_line.product_id.clasificacion is 'electricidad':
+                        invoice_line.write( {
+                            'price_unit': record.subtotal_electricidad
+                        })
