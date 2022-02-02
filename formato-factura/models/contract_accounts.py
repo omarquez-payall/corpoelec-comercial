@@ -12,8 +12,14 @@ class ContractAccounts( models.Model):
     medidor = fields.Char(string = 'Identificador de Medidor')
     address_suministro = fields.Text(string = 'Dirección de Suministro')
     titular = fields.Many2one(string = 'Titular', comodel_name = 'res.partner')
+    name = fields.Char(string = 'name', related = 'titular.name')
     tarifa = fields.Float(string = 'Demanda asignada')
     fecha_creacion = fields.Date(string = 'Fecha de creación')
+    
+    @api.onchange('name')
+    def update_partner(self):
+        for record in self:
+            partner_object = self.env['res.partner'].search([('name','=', record.name)])
     
     @api.model
     def create(self, vals):
