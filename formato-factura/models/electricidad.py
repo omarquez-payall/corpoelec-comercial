@@ -97,3 +97,4 @@ class Electricidad( models.Model):
                         invoice_line.write( {
                             'price_unit': record.subtotal_electricidad
                         })
+                        invoice_line._onchange_price_subtotal()
