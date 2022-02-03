@@ -34,7 +34,7 @@ class AccountMove( models.Model):
     @api.onchange('invoice_date')
     def expiration_date(self):
         for record in self:
-            record.invoice_date_due = record.invoice_date + record.invoice_date.day
+            record.dias_lectura = record.invoice_date.day
             
             
 
