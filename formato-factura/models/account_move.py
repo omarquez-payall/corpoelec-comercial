@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api
+import datetime
 
 
 class AccountMove( models.Model):
@@ -33,7 +34,8 @@ class AccountMove( models.Model):
     @api.onchange('invoice_date')
     def expiration_date(self):
         for record in self:
-            record.dias_lectura = record.invoice_date.month
+            days = datetime.date()
+            record.fin_periodo = record.inicio_periodo + ((record.inicio_periodo.day)+17)
             
             
 
