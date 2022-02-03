@@ -19,6 +19,7 @@
             <field name="standard_price">1</field>
             <field name="list_price">1</field>
             <field name="type">service</field>
+            <field name="clasificacion">electricidad</field>
             <field name="precargar">True</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
@@ -30,6 +31,7 @@
             <field name="list_price">1</field>
             <field name="precargar">True</field>
             <field name="type">service</field>
+            <field name="clasificacion">aseo</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
         </record>
@@ -39,7 +41,8 @@
             <field name="standard_price">1</field>
             <field name="list_price">1</field>
             <field name="precargar">True</field>
-            <field name="type">service</field>
+            <field name="clasificacion">service</field>
+            <field name="type">relleno</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
         </record>
