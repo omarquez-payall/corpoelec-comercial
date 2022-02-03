@@ -31,7 +31,7 @@ class AccountMove( models.Model):
     #dias_lectura = fields.Integer( string = "Dias Lectura", required = True)
     #CREAR LINEAS DEL SERVICIO DE ELECTRICIDAD, ASEO Y RELLENO
     
-    @api.onchange('invoice_date')
+    @api.onchange('inicio_periodo')
     def expiration_date(self):
         for record in self:
             record.dias_lectura = record.inicio_periodo.day
