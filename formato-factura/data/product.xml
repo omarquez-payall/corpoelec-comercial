@@ -41,8 +41,8 @@
             <field name="standard_price">1</field>
             <field name="list_price">1</field>
             <field name="precargar">True</field>
-            <field name="clasificacion">service</field>
-            <field name="type">relleno</field>
+            <field name="clasificacion">relleno</field>
+            <field name="type">service</field>
             <field name="uom_id" ref="uom.product_uom_unit"/>
             <field name="uom_po_id" ref="uom.product_uom_unit"/>
         </record>
